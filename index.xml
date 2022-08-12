@@ -5,6 +5,25 @@
     <link>https://rainofsilence.github.io/</link>
     <description>Recent content on Rainofsilence&#39;s site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language><atom:link href="https://rainofsilence.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 12 Aug 2022 17:17:30 +0800</lastBuildDate><atom:link href="https://rainofsilence.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Readme</title>
+      <link>https://rainofsilence.github.io/readme/</link>
+      <pubDate>Fri, 12 Aug 2022 17:19:22 +0800</pubDate>
+      
+      <guid>https://rainofsilence.github.io/readme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Start</title>
+      <link>https://rainofsilence.github.io/post/start/</link>
+      <pubDate>Fri, 12 Aug 2022 17:17:30 +0800</pubDate>
+      
+      <guid>https://rainofsilence.github.io/post/start/</guid>
+      <description>Hello, this is my first post!</description>
+    </item>
+    
   </channel>
 </rss>
