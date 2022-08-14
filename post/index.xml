@@ -6,7 +6,24 @@
     <description>Recent content in Posts on Rainofsilence&#39;s site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 12 Aug 2022 17:17:30 +0800</lastBuildDate><atom:link href="https://rainofsilence.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Aug 2022 19:57:57 +0800</lastBuildDate><atom:link href="https://rainofsilence.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo &#43; Github Pages 搭建个人博客</title>
+      <link>https://rainofsilence.github.io/post/hugo-&#43;-github-pages-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Sat, 13 Aug 2022 19:57:57 +0800</pubDate>
+      
+      <guid>https://rainofsilence.github.io/post/hugo-&#43;-github-pages-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>安装Hugo Mac 安装 Hugo 推荐使用HomeBrew安装
+brew install hugo Widows 安装 Hugo 在gohugoio/hugo/releases下载二进制包进行安装
+验证是否安装成功 hugo version 输出版本信息表示安装成功
+使用 Hugo 创建项目 初始化项目命令如下：
+hugo new site [site-name] # for example hugo new site site-demo 这样项目就创建成功了，项目结构如下：
+添加主题 在Hugo主题市场可以挑选themes.gohugo.io
+我拿hugo-theme-jane举例：
+# 进入项目根目录 cd site-demo # 使用git克隆主题到themes git clone https://github.com/xianmin/hugo-theme-jane.git --depth=1 themes/jane # 替换content cp -r themes/jane/exampleSite/content ./ # 配置文件 cp themes/jane/exampleSite/config.toml ./ # 本地启动服务 hugo server 添加文章 # 在context/post目录下创建 hugo new post/my-first-post.md 其中archetypes/default.md中有个draft配置，表示草稿，需要设置为false才能将内容显示。
+打包 为了能部署到线上， 需要吧Markdown文件打包成静态HTML文件。打包命令如下：</description>
+    </item>
+    
     <item>
       <title>Start</title>
       <link>https://rainofsilence.github.io/post/start/</link>

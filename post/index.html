@@ -154,7 +154,7 @@
                 </path>
               </svg>
               Posts
-              <span class="Counter">1</span>
+              <span class="Counter">2</span>
             </a>
           </nav>
           <div class="profile-color-modes js-promo-color-modes-banner-profile isInitialToggle">
@@ -447,7 +447,7 @@
         </path>
       </svg>
       Posts
-      <span class="Counter ">1</span>
+      <span class="Counter ">2</span>
     </a>
   </nav>
 </div>
@@ -461,6 +461,40 @@
         
       
       <ul>
+        
+        <li class="col-12 d-flex width-full py-4 border-bottom color-border-secondary public source">
+          <div class="col-12 d-inline-block">
+            <div class="d-inline-block mb-1">
+              <h3 class="wb-break-all">
+                <a href="https://rainofsilence.github.io/post/hugo-&#43;-github-pages-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">Hugo &#43; Github Pages 搭建个人博客</a>
+              </h3>
+            </div>
+
+            <div>
+              <div class="col-12 d-inline-block text-gray mb-2 pr-4">
+                安装Hugo Mac 安装 Hugo 推荐使用HomeBrew安装
+brew install hugo Widows 安装 Hugo 在gohugoio/hugo/releases下载二进制包进行安装
+验证是否安装成功 hugo version 输出版本信息表示安装成功
+使用 Hugo 创建项目 初始化项目命令如下：
+hugo new site [site-name] # for example hugo new site site-demo 这样项目就创建成功了，项目结构如下：
+添加主题 在Hugo主题市场可以挑选themes.gohugo.io
+我拿hugo-theme-jane举例：
+# 进入项目根目录 cd site-demo # 使用git克隆主题到themes git clone https://github.com/xianmin/hugo-theme-jane.git --depth=1 themes/jane # 替换content cp -r themes/jane/exampleSite/content ./ # 配置文件 cp themes/jane/exampleSite/config.toml ./ # 本地启动服务 hugo server 添加文章 # 在context/post目录下创建 hugo new post/my-first-post.md 其中archetypes/default.md中有个draft配置，表示草稿，需要设置为false才能将内容显示。
+打包 为了能部署到线上， 需要吧Markdown文件打包成静态HTML文件。打包命令如下：
+              </div>
+            </div>
+
+            <div class="f6 text-gray mt-2">
+              
+
+              Created
+              <relative-time datetime=" Sat, 13 Aug 2022 19:57:57 &#43;0800" class="no-wrap"
+                title=" Sat, 13 Aug 2022 19:57:57 &#43;0800">
+                Sat, 13 Aug 2022 19:57:57 &#43;0800
+              </relative-time>
+            </div>
+          </div>
+        </li>
         
         <li class="col-12 d-flex width-full py-4 border-bottom color-border-secondary public source">
           <div class="col-12 d-inline-block">
