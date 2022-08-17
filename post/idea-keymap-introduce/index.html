@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script type="application/javascript" src='https://rainofsilence.github.io/js/theme-mode.js'></script>
+    <link rel="stylesheet" href='https://rainofsilence.github.io/css/frameworks.min.css' />
+    <link rel="stylesheet" href='https://rainofsilence.github.io/css/github.min.css' />
+    <link rel="stylesheet" href='https://rainofsilence.github.io/css/github-style.css' />
+    <link rel="stylesheet" href='https://rainofsilence.github.io/css/light.css' />
+    <link rel="stylesheet" href='https://rainofsilence.github.io/css/dark.css' />
+    <link rel="stylesheet" href='https://rainofsilence.github.io/css/syntax.css' />
+    <title>Idea Keymap Introduce - Rainofsilence&#39;s site</title>
+    
+    <link rel="icon" type="image/x-icon" href='/images/github.png'>
+    
+    <meta name="theme-color" content="#1e2327">
+
+    
+    <meta name="description"
+  content="IntelliJ IDEA For Win 快捷键 说明 IntelliJ IDEA 的便捷操作性，快捷键的功劳占了一大半，对于各个快捷键组合请认真对待。IntelliJ IDEA 本身的设计思维是提倡键盘优先于鼠标的，所以各种快捷键组合层出不穷，对于快捷键设置也有各种支持，对于其他 IDE 的快捷键组合也有预设模板进行支持。
+关于各个快捷键的频率分类上可能每个人都有各自的看法，下面的整理也只是以我个人的使用习惯来划分的，而我应该是可以代表某一部分小众人员。但是我个人还是强烈建议你可以在我的基础上整理一份属于你的快捷键目录（删除掉多余的字眼，只保留快捷键内容），本篇文章也只是起到一个工具和引子的作用。
+对于下面各个快捷键的使介绍描述也许用我个人语言翻译起来不够准确或是不全面，且在不同的文件类型上按出来的效果也可能结果不太一样,所以 强烈建议 你自己把各个快捷键都亲自操作下体会下各个快捷键的实际用法。
+Ctrl 快捷键 介绍 Ctrl &#43; F 在当前文件进行文本查找 （必备） Ctrl &#43; R 在当前文件进行文本替换 （必备） Ctrl &#43; Z 撤销 （必备） Ctrl &#43; Y 删除光标所在行 或 删除选中的行 （必备） Ctrl &#43; X 剪切光标所在行 或 剪切选择内容 Ctrl &#43; C 复制光标所在行 或 复制选择内容 Ctrl &#43; D 复制光标所在行 或 复制选择内容，并把复制内容插入光标位置下面 （必备） Ctrl &#43; W 递进式选择代码块。可选中光标所在的单词或段落，连续按会在原有选中的基础上再扩展选中范围 （必备） Ctrl &#43; E 显示最近打开的文件记录列表 （必备） Ctrl &#43; N 根据输入的 类名 查找类文件 （必备） Ctrl &#43; G 在当前文件跳转到指定行处 Ctrl &#43; J 插入自定义动态代码模板 （必备） Ctrl &#43; P 方法参数提示显示 （必备） Ctrl &#43; Q 光标所在的变量 / 类名 / 方法名等上面（也可以在提示补充的时候按），显示文档内容 Ctrl &#43; U 前往当前光标所在的方法的父类的方法 / 接口定义 （必备） Ctrl &#43; B 进入光标所在的方法/变量的接口或是定义处，等效于 Ctrl &#43; 左键单击 （必备） Ctrl &#43; K 版本控制提交项目，需要此项目有加入到版本控制才可用 Ctrl &#43; T 版本控制更新项目，需要此项目有加入到版本控制才可用 Ctrl &#43; H 显示当前类的层次结构 Ctrl &#43; O 选择可重写的方法 Ctrl &#43; I 选择可继承的方法 Ctrl &#43; &#43; 展开代码 Ctrl &#43; - 折叠代码 Ctrl &#43; / 注释光标所在行代码，会根据当前不同文件类型使用不同的注释符号 （必备） Ctrl &#43; [ 移动光标到当前所在代码的花括号开始位置 Ctrl &#43; ] 移动光标到当前所在代码的花括号结束位置 Ctrl &#43; F1 在光标所在的错误代码处显示错误信息 （必备） Ctrl &#43; F3 调转到所选中的词的下一个引用位置 （必备） Ctrl &#43; F4 关闭当前编辑文件 Ctrl &#43; F8 在 Debug 模式下，设置光标当前行为断点，如果当前已经是断点则去掉断点 Ctrl &#43; F9 执行 Make Project 操作 Ctrl &#43; F11 选中文件 / 文件夹，使用助记符设定 / 取消书签 （必备） Ctrl &#43; F12 弹出当前文件结构层，可以在弹出的层上直接输入，进行筛选 Ctrl &#43; Tab 编辑窗口切换，如果在切换的过程又加按上delete，则是关闭对应选中的窗口 Ctrl &#43; End 跳到文件尾 Ctrl &#43; Home 跳到文件头 Ctrl &#43; Space 基础代码补全，默认在 Windows 系统上被输入法占用，需要进行修改，建议修改为 Ctrl &#43; 逗号 （必备） Ctrl &#43; Delete 删除光标后面的单词或是中文句 （必备） Ctrl &#43; BackSpace 删除光标前面的单词或是中文句 （必备） Ctrl &#43; 1,2,3&amp;hellip;9 定位到对应数值的书签位置 （必备） Ctrl &#43; 左键单击 在打开的文件标题上，弹出该文件路径 （必备） Ctrl &#43; 光标定位 按 Ctrl 不要松开，会显示光标所在的类信息摘要 Ctrl &#43; 左方向键 光标跳转到当前单词 / 中文句的左侧开头位置 （必备） Ctrl &#43; 右方向键 光标跳转到当前单词 / 中文句的右侧开头位置 （必备） Ctrl &#43; 前方向键 等效于鼠标滚轮向前效果 （必备） Ctrl &#43; 后方向键 等效于鼠标滚轮向后效果 （必备） Alt 快捷键 介绍 Alt &#43; ` 显示版本控制常用操作菜单弹出层 （必备） Alt &#43; Q 弹出一个提示，显示当前类的声明 / 上下文信息 Alt &#43; F1 显示当前文件选择目标弹出层，弹出层中有很多目标可以进行选择 （必备） Alt &#43; F2 对于前面页面，显示各类浏览器打开目标选择弹出层 Alt &#43; F3 选中文本，逐个往下查找相同文本，并高亮显示 Alt &#43; F7 查找光标所在的方法 / 变量 / 类被调用的地方 Alt &#43; F8 在 Debug 的状态下，选中对象，弹出可输入计算表达式调试框，查看该输入内容的调试结果 Alt &#43; Home 定位 / 显示到当前文件的 Navigation Bar Alt &#43; Enter IntelliJ IDEA 根据光标所在问题，提供快速修复选择，光标放在的位置不同提示的结果也不同 （必备） Alt &#43; Insert 代码自动生成，如生成对象的 set / get 方法，构造函数，toString() 等 （必备） Alt &#43; 左方向键 切换当前已打开的窗口中的子视图，比如Debug窗口中有Output、Debugger等子视图，用此快捷键就可以在子视图中切换 （必备） Alt &#43; 右方向键 按切换当前已打开的窗口中的子视图，比如Debug窗口中有Output、Debugger等子视图，用此快捷键就可以在子视图中切换 （必备） Alt &#43; 前方向键 当前光标跳转到当前文件的前一个方法名位置 （必备） Alt &#43; 后方向键 当前光标跳转到当前文件的后一个方法名位置 （必备） Alt &#43; 1,2,3&amp;hellip;9 显示对应数值的选项卡，其中 1 是 Project 用得最多 （必备） Shift 快捷键 介绍 Shift &#43; F1 如果有外部文档可以连接外部文档 Shift &#43; F2 跳转到上一个高亮错误 或 警告位置 Shift &#43; F3 在查找模式下，查找匹配上一个 Shift &#43; F4 对当前打开的文件，使用新Windows窗口打开，旧窗口保留 Shift &#43; F6 对文件 / 文件夹 重命名 Shift &#43; F7 在 Debug 模式下，智能步入。断点所在行上有多个方法调用，会弹出进入哪个方法 Shift &#43; F8 在 Debug 模式下，跳出，表现出来的效果跟 F9 一样 Shift &#43; F9 等效于点击工具栏的 Debug 按钮 Shift &#43; F10 等效于点击工具栏的 Run 按钮 Shift &#43; F11 弹出书签显示层 （必备） Shift &#43; Tab 取消缩进 （必备） Shift &#43; ESC 隐藏当前 或 最后一个激活的工具窗口 Shift &#43; End 选中光标到当前行尾位置 Shift &#43; Home 选中光标到当前行头位置 Shift &#43; Enter 开始新一行。光标所在行下空出一行，光标定位到新行位置 （必备） Shift &#43; 左键单击 在打开的文件名上按此快捷键，可以关闭当前打开文件 （必备） Shift &#43; 滚轮前后滚动 当前文件的横向滚动轴滚动 （必备） Ctrl &#43; Alt 快捷键 介绍 Ctrl &#43; Alt &#43; L 格式化代码，可以对当前文件和整个包目录使用。（有些文件格式化是有特殊要求的，比如 SQL 文件必须设置方言才可被格式化） （必备） Ctrl &#43; Alt &#43; O 优化导入的类，可以对当前文件和整个包目录使用 （必备） Ctrl &#43; Alt &#43; I 光标所在行 或 选中部分进行自动代码缩进，有点类似格式化 Ctrl &#43; Alt &#43; T 对选中的代码弹出环绕选项弹出层 （必备） Ctrl &#43; Alt &#43; J 弹出模板选择窗口，将选定的代码加入动态模板中 Ctrl &#43; Alt &#43; H 调用层次 Ctrl &#43; Alt &#43; B 在某个调用的方法名上使用会跳到具体的实现处，可以跳过接口 Ctrl &#43; Alt &#43; C 重构-快速提取常量 Ctrl &#43; Alt &#43; F 重构-快速提取成员变量 Ctrl &#43; Alt &#43; V 重构-快速提取变量 Ctrl &#43; Alt &#43; Y 同步、刷新 Ctrl &#43; Alt &#43; S 打开 IntelliJ IDEA 系统设置 （必备） Ctrl &#43; Alt &#43; F7 显示使用的地方。寻找被该类或是变量被调用的地方，用弹出框的方式找出来 Ctrl &#43; Alt &#43; F11 切换全屏模式 Ctrl &#43; Alt &#43; Enter 光标所在行上空出一行，光标定位到新行 （必备） Ctrl &#43; Alt &#43; Home 弹出跟当前文件有关联的文件弹出层 Ctrl &#43; Alt &#43; Space 类名自动完成 Ctrl &#43; Alt &#43; 左方向键 退回到上一个操作的地方 （必备） Ctrl &#43; Alt &#43; 右方向键 前进到上一个操作的地方 （必备） Ctrl &#43; Alt &#43; 前方向键 在查找模式下，跳到上个查找的文件 Ctrl &#43; Alt &#43; 后方向键 在查找模式下，跳到下个查找的文件 Ctrl &#43; Alt &#43; 右括号（]） 在打开多个项目的情况下，切换下一个项目窗口 Ctrl &#43; Alt &#43; 左括号（[） 在打开多个项目的情况下，切换上一个项目窗口 Ctrl &#43; Shift 快捷键 介绍 Ctrl &#43; Shift &#43; F 根据输入内容查找整个项目 或 指定目录内文件 （必备） Ctrl &#43; Shift &#43; R 根据输入内容替换对应内容，范围为整个项目 或 指定目录内文件 （必备） Ctrl &#43; Shift &#43; J 自动将下一行合并到当前行末尾 （必备） Ctrl &#43; Shift &#43; Z 取消撤销 （必备） Ctrl &#43; Shift &#43; W 递进式取消选择代码块。可选中光标所在的单词或段落，连续按会在原有选中的基础上再扩展取消选中范围 （必备） Ctrl &#43; Shift &#43; N 通过文件名定位 / 打开文件 / 目录，打开目录需要在输入的内容后面多加一个正斜杠 （必备） Ctrl &#43; Shift &#43; U 对选中的代码进行大 / 小写轮流转换 （必备） Ctrl &#43; Shift &#43; T 对当前类生成单元测试类，如果已经存在的单元测试类则可以进行选择 （必备） Ctrl &#43; Shift &#43; C 复制当前文件磁盘路径到剪贴板 （必备） Ctrl &#43; Shift &#43; V 弹出缓存的最近拷贝的内容管理器弹出层 Ctrl &#43; Shift &#43; E 显示最近修改的文件列表的弹出层 Ctrl &#43; Shift &#43; H 显示方法层次结构 Ctrl &#43; Shift &#43; B 跳转到类型声明处 （必备） Ctrl &#43; Shift &#43; I 快速查看光标所在的方法 或 类的定义 Ctrl &#43; Shift &#43; A 查找动作 / 设置 Ctrl &#43; Shift &#43; / 代码块注释 （必备） Ctrl &#43; Shift &#43; [ 选中从光标所在位置到它的顶部中括号位置 （必备） Ctrl &#43; Shift &#43; ] 选中从光标所在位置到它的底部中括号位置 （必备） Ctrl &#43; Shift &#43; &#43; 展开所有代码 （必备） Ctrl &#43; Shift &#43; - 折叠所有代码 （必备） Ctrl &#43; Shift &#43; F7 高亮显示所有该选中文本，按Esc高亮消失 （必备） Ctrl &#43; Shift &#43; F8 在 Debug 模式下，指定断点进入条件 Ctrl &#43; Shift &#43; F9 编译选中的文件 / 包 / Module Ctrl &#43; Shift &#43; F12 编辑器最大化 （必备） Ctrl &#43; Shift &#43; Space 智能代码提示 Ctrl &#43; Shift &#43; Enter 自动结束代码，行末自动添加分号 （必备） Ctrl &#43; Shift &#43; Backspace 退回到上次修改的地方 （必备） Ctrl &#43; Shift &#43; 1,2,3&amp;hellip;9 快速添加指定数值的书签 （必备） Ctrl &#43; Shift &#43; 左键单击 把光标放在某个类变量上，按此快捷键可以直接定位到该类中 （必备） Ctrl &#43; Shift &#43; 左方向键 在代码文件上，光标跳转到当前单词 / 中文句的左侧开头位置，同时选中该单词 / 中文句 （必备） Ctrl &#43; Shift &#43; 右方向键 在代码文件上，光标跳转到当前单词 / 中文句的右侧开头位置，同时选中该单词 / 中文句 （必备） Ctrl &#43; Shift &#43; 前方向键 光标放在方法名上，将方法移动到上一个方法前面，调整方法排序 （必备） Ctrl &#43; Shift &#43; 后方向键 光标放在方法名上，将方法移动到下一个方法前面，调整方法排序 （必备） Alt &#43; Shift 快捷键 介绍 Alt &#43; Shift &#43; N 选择 / 添加 task （必备） Alt &#43; Shift &#43; F 显示添加到收藏夹弹出层 / 添加到收藏夹 Alt &#43; Shift &#43; C 查看最近操作项目的变化情况列表 Alt &#43; Shift &#43; I 查看项目当前文件 Alt &#43; Shift &#43; F7 在 Debug 模式下，下一步，进入当前方法体内，如果方法体还有方法，则会进入该内嵌的方法中，依此循环进入 Alt &#43; Shift &#43; F9 弹出 Debug 的可选择菜单 Alt &#43; Shift &#43; F10 弹出 Run 的可选择菜单 Alt &#43; Shift &#43; 左键双击 选择被双击的单词 / 中文句，按住不放，可以同时选择其他单词 / 中文句 （必备） Alt &#43; Shift &#43; 前方向键 移动光标所在行向上移动 （必备） Alt &#43; Shift &#43; 后方向键 移动光标所在行向下移动 （必备） Ctrl &#43; Shift &#43; Alt 快捷键 介绍 Ctrl &#43; Shift &#43; Alt &#43; V 无格式黏贴 （必备） Ctrl &#43; Shift &#43; Alt &#43; N 前往指定的变量 / 方法 Ctrl &#43; Shift &#43; Alt &#43; S 打开当前项目设置 （必备） Ctrl &#43; Shift &#43; Alt &#43; C 复制参考信息 其他 快捷键 介绍 F2 跳转到下一个高亮错误 或 警告位置 （必备） F3 在查找模式下，定位到下一个匹配处 F4 编辑源 （必备） F7 在 Debug 模式下，进入下一步，如果当前行断点是一个方法，则进入当前方法体内，如果该方法体还有方法，则不会进入该内嵌的方法中 F8 在 Debug 模式下，进入下一步，如果当前行断点是一个方法，则不进入当前方法体内 F9 在 Debug 模式下，恢复程序运行，直至下个断点或程序运行结束 F11 添加书签 （必备） F12 回到前一个工具窗口 （必备） Tab 缩进 （必备） ESC 从工具窗口进入代码文件窗口 （必备） 连按两次Shift 弹出 Search Everywhere 弹出层 官网快捷键资料 Windows / Linux：https://www." />
+<meta name="keywords"
+  content='blog, google analytics' />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://rainofsilence.github.io/post/idea-keymap-introduce/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Idea Keymap Introduce - Rainofsilence&#39;s site" />
+<meta name="twitter:description"
+  content="IntelliJ IDEA For Win 快捷键 说明 IntelliJ IDEA 的便捷操作性，快捷键的功劳占了一大半，对于各个快捷键组合请认真对待。IntelliJ IDEA 本身的设计思维是提倡键盘优先于鼠标的，所以各种快捷键组合层出不穷，对于快捷键设置也有各种支持，对于其他 IDE 的快捷键组合也有预设模板进行支持。
+关于各个快捷键的频率分类上可能每个人都有各自的看法，下面的整理也只是以我个人的使用习惯来划分的，而我应该是可以代表某一部分小众人员。但是我个人还是强烈建议你可以在我的基础上整理一份属于你的快捷键目录（删除掉多余的字眼，只保留快捷键内容），本篇文章也只是起到一个工具和引子的作用。
+对于下面各个快捷键的使介绍描述也许用我个人语言翻译起来不够准确或是不全面，且在不同的文件类型上按出来的效果也可能结果不太一样,所以 强烈建议 你自己把各个快捷键都亲自操作下体会下各个快捷键的实际用法。
+Ctrl 快捷键 介绍 Ctrl &#43; F 在当前文件进行文本查找 （必备） Ctrl &#43; R 在当前文件进行文本替换 （必备） Ctrl &#43; Z 撤销 （必备） Ctrl &#43; Y 删除光标所在行 或 删除选中的行 （必备） Ctrl &#43; X 剪切光标所在行 或 剪切选择内容 Ctrl &#43; C 复制光标所在行 或 复制选择内容 Ctrl &#43; D 复制光标所在行 或 复制选择内容，并把复制内容插入光标位置下面 （必备） Ctrl &#43; W 递进式选择代码块。可选中光标所在的单词或段落，连续按会在原有选中的基础上再扩展选中范围 （必备） Ctrl &#43; E 显示最近打开的文件记录列表 （必备） Ctrl &#43; N 根据输入的 类名 查找类文件 （必备） Ctrl &#43; G 在当前文件跳转到指定行处 Ctrl &#43; J 插入自定义动态代码模板 （必备） Ctrl &#43; P 方法参数提示显示 （必备） Ctrl &#43; Q 光标所在的变量 / 类名 / 方法名等上面（也可以在提示补充的时候按），显示文档内容 Ctrl &#43; U 前往当前光标所在的方法的父类的方法 / 接口定义 （必备） Ctrl &#43; B 进入光标所在的方法/变量的接口或是定义处，等效于 Ctrl &#43; 左键单击 （必备） Ctrl &#43; K 版本控制提交项目，需要此项目有加入到版本控制才可用 Ctrl &#43; T 版本控制更新项目，需要此项目有加入到版本控制才可用 Ctrl &#43; H 显示当前类的层次结构 Ctrl &#43; O 选择可重写的方法 Ctrl &#43; I 选择可继承的方法 Ctrl &#43; &#43; 展开代码 Ctrl &#43; - 折叠代码 Ctrl &#43; / 注释光标所在行代码，会根据当前不同文件类型使用不同的注释符号 （必备） Ctrl &#43; [ 移动光标到当前所在代码的花括号开始位置 Ctrl &#43; ] 移动光标到当前所在代码的花括号结束位置 Ctrl &#43; F1 在光标所在的错误代码处显示错误信息 （必备） Ctrl &#43; F3 调转到所选中的词的下一个引用位置 （必备） Ctrl &#43; F4 关闭当前编辑文件 Ctrl &#43; F8 在 Debug 模式下，设置光标当前行为断点，如果当前已经是断点则去掉断点 Ctrl &#43; F9 执行 Make Project 操作 Ctrl &#43; F11 选中文件 / 文件夹，使用助记符设定 / 取消书签 （必备） Ctrl &#43; F12 弹出当前文件结构层，可以在弹出的层上直接输入，进行筛选 Ctrl &#43; Tab 编辑窗口切换，如果在切换的过程又加按上delete，则是关闭对应选中的窗口 Ctrl &#43; End 跳到文件尾 Ctrl &#43; Home 跳到文件头 Ctrl &#43; Space 基础代码补全，默认在 Windows 系统上被输入法占用，需要进行修改，建议修改为 Ctrl &#43; 逗号 （必备） Ctrl &#43; Delete 删除光标后面的单词或是中文句 （必备） Ctrl &#43; BackSpace 删除光标前面的单词或是中文句 （必备） Ctrl &#43; 1,2,3&amp;hellip;9 定位到对应数值的书签位置 （必备） Ctrl &#43; 左键单击 在打开的文件标题上，弹出该文件路径 （必备） Ctrl &#43; 光标定位 按 Ctrl 不要松开，会显示光标所在的类信息摘要 Ctrl &#43; 左方向键 光标跳转到当前单词 / 中文句的左侧开头位置 （必备） Ctrl &#43; 右方向键 光标跳转到当前单词 / 中文句的右侧开头位置 （必备） Ctrl &#43; 前方向键 等效于鼠标滚轮向前效果 （必备） Ctrl &#43; 后方向键 等效于鼠标滚轮向后效果 （必备） Alt 快捷键 介绍 Alt &#43; ` 显示版本控制常用操作菜单弹出层 （必备） Alt &#43; Q 弹出一个提示，显示当前类的声明 / 上下文信息 Alt &#43; F1 显示当前文件选择目标弹出层，弹出层中有很多目标可以进行选择 （必备） Alt &#43; F2 对于前面页面，显示各类浏览器打开目标选择弹出层 Alt &#43; F3 选中文本，逐个往下查找相同文本，并高亮显示 Alt &#43; F7 查找光标所在的方法 / 变量 / 类被调用的地方 Alt &#43; F8 在 Debug 的状态下，选中对象，弹出可输入计算表达式调试框，查看该输入内容的调试结果 Alt &#43; Home 定位 / 显示到当前文件的 Navigation Bar Alt &#43; Enter IntelliJ IDEA 根据光标所在问题，提供快速修复选择，光标放在的位置不同提示的结果也不同 （必备） Alt &#43; Insert 代码自动生成，如生成对象的 set / get 方法，构造函数，toString() 等 （必备） Alt &#43; 左方向键 切换当前已打开的窗口中的子视图，比如Debug窗口中有Output、Debugger等子视图，用此快捷键就可以在子视图中切换 （必备） Alt &#43; 右方向键 按切换当前已打开的窗口中的子视图，比如Debug窗口中有Output、Debugger等子视图，用此快捷键就可以在子视图中切换 （必备） Alt &#43; 前方向键 当前光标跳转到当前文件的前一个方法名位置 （必备） Alt &#43; 后方向键 当前光标跳转到当前文件的后一个方法名位置 （必备） Alt &#43; 1,2,3&amp;hellip;9 显示对应数值的选项卡，其中 1 是 Project 用得最多 （必备） Shift 快捷键 介绍 Shift &#43; F1 如果有外部文档可以连接外部文档 Shift &#43; F2 跳转到上一个高亮错误 或 警告位置 Shift &#43; F3 在查找模式下，查找匹配上一个 Shift &#43; F4 对当前打开的文件，使用新Windows窗口打开，旧窗口保留 Shift &#43; F6 对文件 / 文件夹 重命名 Shift &#43; F7 在 Debug 模式下，智能步入。断点所在行上有多个方法调用，会弹出进入哪个方法 Shift &#43; F8 在 Debug 模式下，跳出，表现出来的效果跟 F9 一样 Shift &#43; F9 等效于点击工具栏的 Debug 按钮 Shift &#43; F10 等效于点击工具栏的 Run 按钮 Shift &#43; F11 弹出书签显示层 （必备） Shift &#43; Tab 取消缩进 （必备） Shift &#43; ESC 隐藏当前 或 最后一个激活的工具窗口 Shift &#43; End 选中光标到当前行尾位置 Shift &#43; Home 选中光标到当前行头位置 Shift &#43; Enter 开始新一行。光标所在行下空出一行，光标定位到新行位置 （必备） Shift &#43; 左键单击 在打开的文件名上按此快捷键，可以关闭当前打开文件 （必备） Shift &#43; 滚轮前后滚动 当前文件的横向滚动轴滚动 （必备） Ctrl &#43; Alt 快捷键 介绍 Ctrl &#43; Alt &#43; L 格式化代码，可以对当前文件和整个包目录使用。（有些文件格式化是有特殊要求的，比如 SQL 文件必须设置方言才可被格式化） （必备） Ctrl &#43; Alt &#43; O 优化导入的类，可以对当前文件和整个包目录使用 （必备） Ctrl &#43; Alt &#43; I 光标所在行 或 选中部分进行自动代码缩进，有点类似格式化 Ctrl &#43; Alt &#43; T 对选中的代码弹出环绕选项弹出层 （必备） Ctrl &#43; Alt &#43; J 弹出模板选择窗口，将选定的代码加入动态模板中 Ctrl &#43; Alt &#43; H 调用层次 Ctrl &#43; Alt &#43; B 在某个调用的方法名上使用会跳到具体的实现处，可以跳过接口 Ctrl &#43; Alt &#43; C 重构-快速提取常量 Ctrl &#43; Alt &#43; F 重构-快速提取成员变量 Ctrl &#43; Alt &#43; V 重构-快速提取变量 Ctrl &#43; Alt &#43; Y 同步、刷新 Ctrl &#43; Alt &#43; S 打开 IntelliJ IDEA 系统设置 （必备） Ctrl &#43; Alt &#43; F7 显示使用的地方。寻找被该类或是变量被调用的地方，用弹出框的方式找出来 Ctrl &#43; Alt &#43; F11 切换全屏模式 Ctrl &#43; Alt &#43; Enter 光标所在行上空出一行，光标定位到新行 （必备） Ctrl &#43; Alt &#43; Home 弹出跟当前文件有关联的文件弹出层 Ctrl &#43; Alt &#43; Space 类名自动完成 Ctrl &#43; Alt &#43; 左方向键 退回到上一个操作的地方 （必备） Ctrl &#43; Alt &#43; 右方向键 前进到上一个操作的地方 （必备） Ctrl &#43; Alt &#43; 前方向键 在查找模式下，跳到上个查找的文件 Ctrl &#43; Alt &#43; 后方向键 在查找模式下，跳到下个查找的文件 Ctrl &#43; Alt &#43; 右括号（]） 在打开多个项目的情况下，切换下一个项目窗口 Ctrl &#43; Alt &#43; 左括号（[） 在打开多个项目的情况下，切换上一个项目窗口 Ctrl &#43; Shift 快捷键 介绍 Ctrl &#43; Shift &#43; F 根据输入内容查找整个项目 或 指定目录内文件 （必备） Ctrl &#43; Shift &#43; R 根据输入内容替换对应内容，范围为整个项目 或 指定目录内文件 （必备） Ctrl &#43; Shift &#43; J 自动将下一行合并到当前行末尾 （必备） Ctrl &#43; Shift &#43; Z 取消撤销 （必备） Ctrl &#43; Shift &#43; W 递进式取消选择代码块。可选中光标所在的单词或段落，连续按会在原有选中的基础上再扩展取消选中范围 （必备） Ctrl &#43; Shift &#43; N 通过文件名定位 / 打开文件 / 目录，打开目录需要在输入的内容后面多加一个正斜杠 （必备） Ctrl &#43; Shift &#43; U 对选中的代码进行大 / 小写轮流转换 （必备） Ctrl &#43; Shift &#43; T 对当前类生成单元测试类，如果已经存在的单元测试类则可以进行选择 （必备） Ctrl &#43; Shift &#43; C 复制当前文件磁盘路径到剪贴板 （必备） Ctrl &#43; Shift &#43; V 弹出缓存的最近拷贝的内容管理器弹出层 Ctrl &#43; Shift &#43; E 显示最近修改的文件列表的弹出层 Ctrl &#43; Shift &#43; H 显示方法层次结构 Ctrl &#43; Shift &#43; B 跳转到类型声明处 （必备） Ctrl &#43; Shift &#43; I 快速查看光标所在的方法 或 类的定义 Ctrl &#43; Shift &#43; A 查找动作 / 设置 Ctrl &#43; Shift &#43; / 代码块注释 （必备） Ctrl &#43; Shift &#43; [ 选中从光标所在位置到它的顶部中括号位置 （必备） Ctrl &#43; Shift &#43; ] 选中从光标所在位置到它的底部中括号位置 （必备） Ctrl &#43; Shift &#43; &#43; 展开所有代码 （必备） Ctrl &#43; Shift &#43; - 折叠所有代码 （必备） Ctrl &#43; Shift &#43; F7 高亮显示所有该选中文本，按Esc高亮消失 （必备） Ctrl &#43; Shift &#43; F8 在 Debug 模式下，指定断点进入条件 Ctrl &#43; Shift &#43; F9 编译选中的文件 / 包 / Module Ctrl &#43; Shift &#43; F12 编辑器最大化 （必备） Ctrl &#43; Shift &#43; Space 智能代码提示 Ctrl &#43; Shift &#43; Enter 自动结束代码，行末自动添加分号 （必备） Ctrl &#43; Shift &#43; Backspace 退回到上次修改的地方 （必备） Ctrl &#43; Shift &#43; 1,2,3&amp;hellip;9 快速添加指定数值的书签 （必备） Ctrl &#43; Shift &#43; 左键单击 把光标放在某个类变量上，按此快捷键可以直接定位到该类中 （必备） Ctrl &#43; Shift &#43; 左方向键 在代码文件上，光标跳转到当前单词 / 中文句的左侧开头位置，同时选中该单词 / 中文句 （必备） Ctrl &#43; Shift &#43; 右方向键 在代码文件上，光标跳转到当前单词 / 中文句的右侧开头位置，同时选中该单词 / 中文句 （必备） Ctrl &#43; Shift &#43; 前方向键 光标放在方法名上，将方法移动到上一个方法前面，调整方法排序 （必备） Ctrl &#43; Shift &#43; 后方向键 光标放在方法名上，将方法移动到下一个方法前面，调整方法排序 （必备） Alt &#43; Shift 快捷键 介绍 Alt &#43; Shift &#43; N 选择 / 添加 task （必备） Alt &#43; Shift &#43; F 显示添加到收藏夹弹出层 / 添加到收藏夹 Alt &#43; Shift &#43; C 查看最近操作项目的变化情况列表 Alt &#43; Shift &#43; I 查看项目当前文件 Alt &#43; Shift &#43; F7 在 Debug 模式下，下一步，进入当前方法体内，如果方法体还有方法，则会进入该内嵌的方法中，依此循环进入 Alt &#43; Shift &#43; F9 弹出 Debug 的可选择菜单 Alt &#43; Shift &#43; F10 弹出 Run 的可选择菜单 Alt &#43; Shift &#43; 左键双击 选择被双击的单词 / 中文句，按住不放，可以同时选择其他单词 / 中文句 （必备） Alt &#43; Shift &#43; 前方向键 移动光标所在行向上移动 （必备） Alt &#43; Shift &#43; 后方向键 移动光标所在行向下移动 （必备） Ctrl &#43; Shift &#43; Alt 快捷键 介绍 Ctrl &#43; Shift &#43; Alt &#43; V 无格式黏贴 （必备） Ctrl &#43; Shift &#43; Alt &#43; N 前往指定的变量 / 方法 Ctrl &#43; Shift &#43; Alt &#43; S 打开当前项目设置 （必备） Ctrl &#43; Shift &#43; Alt &#43; C 复制参考信息 其他 快捷键 介绍 F2 跳转到下一个高亮错误 或 警告位置 （必备） F3 在查找模式下，定位到下一个匹配处 F4 编辑源 （必备） F7 在 Debug 模式下，进入下一步，如果当前行断点是一个方法，则进入当前方法体内，如果该方法体还有方法，则不会进入该内嵌的方法中 F8 在 Debug 模式下，进入下一步，如果当前行断点是一个方法，则不进入当前方法体内 F9 在 Debug 模式下，恢复程序运行，直至下个断点或程序运行结束 F11 添加书签 （必备） F12 回到前一个工具窗口 （必备） Tab 缩进 （必备） ESC 从工具窗口进入代码文件窗口 （必备） 连按两次Shift 弹出 Search Everywhere 弹出层 官网快捷键资料 Windows / Linux：https://www." />
+<meta name="twitter:site" content="https://rainofsilence.github.io/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image"
+  content="https://rainofsilence.github.io/">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Idea Keymap Introduce - Rainofsilence&#39;s site">
+<meta property="og:description"
+  content="IntelliJ IDEA For Win 快捷键 说明 IntelliJ IDEA 的便捷操作性，快捷键的功劳占了一大半，对于各个快捷键组合请认真对待。IntelliJ IDEA 本身的设计思维是提倡键盘优先于鼠标的，所以各种快捷键组合层出不穷，对于快捷键设置也有各种支持，对于其他 IDE 的快捷键组合也有预设模板进行支持。
+关于各个快捷键的频率分类上可能每个人都有各自的看法，下面的整理也只是以我个人的使用习惯来划分的，而我应该是可以代表某一部分小众人员。但是我个人还是强烈建议你可以在我的基础上整理一份属于你的快捷键目录（删除掉多余的字眼，只保留快捷键内容），本篇文章也只是起到一个工具和引子的作用。
+对于下面各个快捷键的使介绍描述也许用我个人语言翻译起来不够准确或是不全面，且在不同的文件类型上按出来的效果也可能结果不太一样,所以 强烈建议 你自己把各个快捷键都亲自操作下体会下各个快捷键的实际用法。
+Ctrl 快捷键 介绍 Ctrl &#43; F 在当前文件进行文本查找 （必备） Ctrl &#43; R 在当前文件进行文本替换 （必备） Ctrl &#43; Z 撤销 （必备） Ctrl &#43; Y 删除光标所在行 或 删除选中的行 （必备） Ctrl &#43; X 剪切光标所在行 或 剪切选择内容 Ctrl &#43; C 复制光标所在行 或 复制选择内容 Ctrl &#43; D 复制光标所在行 或 复制选择内容，并把复制内容插入光标位置下面 （必备） Ctrl &#43; W 递进式选择代码块。可选中光标所在的单词或段落，连续按会在原有选中的基础上再扩展选中范围 （必备） Ctrl &#43; E 显示最近打开的文件记录列表 （必备） Ctrl &#43; N 根据输入的 类名 查找类文件 （必备） Ctrl &#43; G 在当前文件跳转到指定行处 Ctrl &#43; J 插入自定义动态代码模板 （必备） Ctrl &#43; P 方法参数提示显示 （必备） Ctrl &#43; Q 光标所在的变量 / 类名 / 方法名等上面（也可以在提示补充的时候按），显示文档内容 Ctrl &#43; U 前往当前光标所在的方法的父类的方法 / 接口定义 （必备） Ctrl &#43; B 进入光标所在的方法/变量的接口或是定义处，等效于 Ctrl &#43; 左键单击 （必备） Ctrl &#43; K 版本控制提交项目，需要此项目有加入到版本控制才可用 Ctrl &#43; T 版本控制更新项目，需要此项目有加入到版本控制才可用 Ctrl &#43; H 显示当前类的层次结构 Ctrl &#43; O 选择可重写的方法 Ctrl &#43; I 选择可继承的方法 Ctrl &#43; &#43; 展开代码 Ctrl &#43; - 折叠代码 Ctrl &#43; / 注释光标所在行代码，会根据当前不同文件类型使用不同的注释符号 （必备） Ctrl &#43; [ 移动光标到当前所在代码的花括号开始位置 Ctrl &#43; ] 移动光标到当前所在代码的花括号结束位置 Ctrl &#43; F1 在光标所在的错误代码处显示错误信息 （必备） Ctrl &#43; F3 调转到所选中的词的下一个引用位置 （必备） Ctrl &#43; F4 关闭当前编辑文件 Ctrl &#43; F8 在 Debug 模式下，设置光标当前行为断点，如果当前已经是断点则去掉断点 Ctrl &#43; F9 执行 Make Project 操作 Ctrl &#43; F11 选中文件 / 文件夹，使用助记符设定 / 取消书签 （必备） Ctrl &#43; F12 弹出当前文件结构层，可以在弹出的层上直接输入，进行筛选 Ctrl &#43; Tab 编辑窗口切换，如果在切换的过程又加按上delete，则是关闭对应选中的窗口 Ctrl &#43; End 跳到文件尾 Ctrl &#43; Home 跳到文件头 Ctrl &#43; Space 基础代码补全，默认在 Windows 系统上被输入法占用，需要进行修改，建议修改为 Ctrl &#43; 逗号 （必备） Ctrl &#43; Delete 删除光标后面的单词或是中文句 （必备） Ctrl &#43; BackSpace 删除光标前面的单词或是中文句 （必备） Ctrl &#43; 1,2,3&amp;hellip;9 定位到对应数值的书签位置 （必备） Ctrl &#43; 左键单击 在打开的文件标题上，弹出该文件路径 （必备） Ctrl &#43; 光标定位 按 Ctrl 不要松开，会显示光标所在的类信息摘要 Ctrl &#43; 左方向键 光标跳转到当前单词 / 中文句的左侧开头位置 （必备） Ctrl &#43; 右方向键 光标跳转到当前单词 / 中文句的右侧开头位置 （必备） Ctrl &#43; 前方向键 等效于鼠标滚轮向前效果 （必备） Ctrl &#43; 后方向键 等效于鼠标滚轮向后效果 （必备） Alt 快捷键 介绍 Alt &#43; ` 显示版本控制常用操作菜单弹出层 （必备） Alt &#43; Q 弹出一个提示，显示当前类的声明 / 上下文信息 Alt &#43; F1 显示当前文件选择目标弹出层，弹出层中有很多目标可以进行选择 （必备） Alt &#43; F2 对于前面页面，显示各类浏览器打开目标选择弹出层 Alt &#43; F3 选中文本，逐个往下查找相同文本，并高亮显示 Alt &#43; F7 查找光标所在的方法 / 变量 / 类被调用的地方 Alt &#43; F8 在 Debug 的状态下，选中对象，弹出可输入计算表达式调试框，查看该输入内容的调试结果 Alt &#43; Home 定位 / 显示到当前文件的 Navigation Bar Alt &#43; Enter IntelliJ IDEA 根据光标所在问题，提供快速修复选择，光标放在的位置不同提示的结果也不同 （必备） Alt &#43; Insert 代码自动生成，如生成对象的 set / get 方法，构造函数，toString() 等 （必备） Alt &#43; 左方向键 切换当前已打开的窗口中的子视图，比如Debug窗口中有Output、Debugger等子视图，用此快捷键就可以在子视图中切换 （必备） Alt &#43; 右方向键 按切换当前已打开的窗口中的子视图，比如Debug窗口中有Output、Debugger等子视图，用此快捷键就可以在子视图中切换 （必备） Alt &#43; 前方向键 当前光标跳转到当前文件的前一个方法名位置 （必备） Alt &#43; 后方向键 当前光标跳转到当前文件的后一个方法名位置 （必备） Alt &#43; 1,2,3&amp;hellip;9 显示对应数值的选项卡，其中 1 是 Project 用得最多 （必备） Shift 快捷键 介绍 Shift &#43; F1 如果有外部文档可以连接外部文档 Shift &#43; F2 跳转到上一个高亮错误 或 警告位置 Shift &#43; F3 在查找模式下，查找匹配上一个 Shift &#43; F4 对当前打开的文件，使用新Windows窗口打开，旧窗口保留 Shift &#43; F6 对文件 / 文件夹 重命名 Shift &#43; F7 在 Debug 模式下，智能步入。断点所在行上有多个方法调用，会弹出进入哪个方法 Shift &#43; F8 在 Debug 模式下，跳出，表现出来的效果跟 F9 一样 Shift &#43; F9 等效于点击工具栏的 Debug 按钮 Shift &#43; F10 等效于点击工具栏的 Run 按钮 Shift &#43; F11 弹出书签显示层 （必备） Shift &#43; Tab 取消缩进 （必备） Shift &#43; ESC 隐藏当前 或 最后一个激活的工具窗口 Shift &#43; End 选中光标到当前行尾位置 Shift &#43; Home 选中光标到当前行头位置 Shift &#43; Enter 开始新一行。光标所在行下空出一行，光标定位到新行位置 （必备） Shift &#43; 左键单击 在打开的文件名上按此快捷键，可以关闭当前打开文件 （必备） Shift &#43; 滚轮前后滚动 当前文件的横向滚动轴滚动 （必备） Ctrl &#43; Alt 快捷键 介绍 Ctrl &#43; Alt &#43; L 格式化代码，可以对当前文件和整个包目录使用。（有些文件格式化是有特殊要求的，比如 SQL 文件必须设置方言才可被格式化） （必备） Ctrl &#43; Alt &#43; O 优化导入的类，可以对当前文件和整个包目录使用 （必备） Ctrl &#43; Alt &#43; I 光标所在行 或 选中部分进行自动代码缩进，有点类似格式化 Ctrl &#43; Alt &#43; T 对选中的代码弹出环绕选项弹出层 （必备） Ctrl &#43; Alt &#43; J 弹出模板选择窗口，将选定的代码加入动态模板中 Ctrl &#43; Alt &#43; H 调用层次 Ctrl &#43; Alt &#43; B 在某个调用的方法名上使用会跳到具体的实现处，可以跳过接口 Ctrl &#43; Alt &#43; C 重构-快速提取常量 Ctrl &#43; Alt &#43; F 重构-快速提取成员变量 Ctrl &#43; Alt &#43; V 重构-快速提取变量 Ctrl &#43; Alt &#43; Y 同步、刷新 Ctrl &#43; Alt &#43; S 打开 IntelliJ IDEA 系统设置 （必备） Ctrl &#43; Alt &#43; F7 显示使用的地方。寻找被该类或是变量被调用的地方，用弹出框的方式找出来 Ctrl &#43; Alt &#43; F11 切换全屏模式 Ctrl &#43; Alt &#43; Enter 光标所在行上空出一行，光标定位到新行 （必备） Ctrl &#43; Alt &#43; Home 弹出跟当前文件有关联的文件弹出层 Ctrl &#43; Alt &#43; Space 类名自动完成 Ctrl &#43; Alt &#43; 左方向键 退回到上一个操作的地方 （必备） Ctrl &#43; Alt &#43; 右方向键 前进到上一个操作的地方 （必备） Ctrl &#43; Alt &#43; 前方向键 在查找模式下，跳到上个查找的文件 Ctrl &#43; Alt &#43; 后方向键 在查找模式下，跳到下个查找的文件 Ctrl &#43; Alt &#43; 右括号（]） 在打开多个项目的情况下，切换下一个项目窗口 Ctrl &#43; Alt &#43; 左括号（[） 在打开多个项目的情况下，切换上一个项目窗口 Ctrl &#43; Shift 快捷键 介绍 Ctrl &#43; Shift &#43; F 根据输入内容查找整个项目 或 指定目录内文件 （必备） Ctrl &#43; Shift &#43; R 根据输入内容替换对应内容，范围为整个项目 或 指定目录内文件 （必备） Ctrl &#43; Shift &#43; J 自动将下一行合并到当前行末尾 （必备） Ctrl &#43; Shift &#43; Z 取消撤销 （必备） Ctrl &#43; Shift &#43; W 递进式取消选择代码块。可选中光标所在的单词或段落，连续按会在原有选中的基础上再扩展取消选中范围 （必备） Ctrl &#43; Shift &#43; N 通过文件名定位 / 打开文件 / 目录，打开目录需要在输入的内容后面多加一个正斜杠 （必备） Ctrl &#43; Shift &#43; U 对选中的代码进行大 / 小写轮流转换 （必备） Ctrl &#43; Shift &#43; T 对当前类生成单元测试类，如果已经存在的单元测试类则可以进行选择 （必备） Ctrl &#43; Shift &#43; C 复制当前文件磁盘路径到剪贴板 （必备） Ctrl &#43; Shift &#43; V 弹出缓存的最近拷贝的内容管理器弹出层 Ctrl &#43; Shift &#43; E 显示最近修改的文件列表的弹出层 Ctrl &#43; Shift &#43; H 显示方法层次结构 Ctrl &#43; Shift &#43; B 跳转到类型声明处 （必备） Ctrl &#43; Shift &#43; I 快速查看光标所在的方法 或 类的定义 Ctrl &#43; Shift &#43; A 查找动作 / 设置 Ctrl &#43; Shift &#43; / 代码块注释 （必备） Ctrl &#43; Shift &#43; [ 选中从光标所在位置到它的顶部中括号位置 （必备） Ctrl &#43; Shift &#43; ] 选中从光标所在位置到它的底部中括号位置 （必备） Ctrl &#43; Shift &#43; &#43; 展开所有代码 （必备） Ctrl &#43; Shift &#43; - 折叠所有代码 （必备） Ctrl &#43; Shift &#43; F7 高亮显示所有该选中文本，按Esc高亮消失 （必备） Ctrl &#43; Shift &#43; F8 在 Debug 模式下，指定断点进入条件 Ctrl &#43; Shift &#43; F9 编译选中的文件 / 包 / Module Ctrl &#43; Shift &#43; F12 编辑器最大化 （必备） Ctrl &#43; Shift &#43; Space 智能代码提示 Ctrl &#43; Shift &#43; Enter 自动结束代码，行末自动添加分号 （必备） Ctrl &#43; Shift &#43; Backspace 退回到上次修改的地方 （必备） Ctrl &#43; Shift &#43; 1,2,3&amp;hellip;9 快速添加指定数值的书签 （必备） Ctrl &#43; Shift &#43; 左键单击 把光标放在某个类变量上，按此快捷键可以直接定位到该类中 （必备） Ctrl &#43; Shift &#43; 左方向键 在代码文件上，光标跳转到当前单词 / 中文句的左侧开头位置，同时选中该单词 / 中文句 （必备） Ctrl &#43; Shift &#43; 右方向键 在代码文件上，光标跳转到当前单词 / 中文句的右侧开头位置，同时选中该单词 / 中文句 （必备） Ctrl &#43; Shift &#43; 前方向键 光标放在方法名上，将方法移动到上一个方法前面，调整方法排序 （必备） Ctrl &#43; Shift &#43; 后方向键 光标放在方法名上，将方法移动到下一个方法前面，调整方法排序 （必备） Alt &#43; Shift 快捷键 介绍 Alt &#43; Shift &#43; N 选择 / 添加 task （必备） Alt &#43; Shift &#43; F 显示添加到收藏夹弹出层 / 添加到收藏夹 Alt &#43; Shift &#43; C 查看最近操作项目的变化情况列表 Alt &#43; Shift &#43; I 查看项目当前文件 Alt &#43; Shift &#43; F7 在 Debug 模式下，下一步，进入当前方法体内，如果方法体还有方法，则会进入该内嵌的方法中，依此循环进入 Alt &#43; Shift &#43; F9 弹出 Debug 的可选择菜单 Alt &#43; Shift &#43; F10 弹出 Run 的可选择菜单 Alt &#43; Shift &#43; 左键双击 选择被双击的单词 / 中文句，按住不放，可以同时选择其他单词 / 中文句 （必备） Alt &#43; Shift &#43; 前方向键 移动光标所在行向上移动 （必备） Alt &#43; Shift &#43; 后方向键 移动光标所在行向下移动 （必备） Ctrl &#43; Shift &#43; Alt 快捷键 介绍 Ctrl &#43; Shift &#43; Alt &#43; V 无格式黏贴 （必备） Ctrl &#43; Shift &#43; Alt &#43; N 前往指定的变量 / 方法 Ctrl &#43; Shift &#43; Alt &#43; S 打开当前项目设置 （必备） Ctrl &#43; Shift &#43; Alt &#43; C 复制参考信息 其他 快捷键 介绍 F2 跳转到下一个高亮错误 或 警告位置 （必备） F3 在查找模式下，定位到下一个匹配处 F4 编辑源 （必备） F7 在 Debug 模式下，进入下一步，如果当前行断点是一个方法，则进入当前方法体内，如果该方法体还有方法，则不会进入该内嵌的方法中 F8 在 Debug 模式下，进入下一步，如果当前行断点是一个方法，则不进入当前方法体内 F9 在 Debug 模式下，恢复程序运行，直至下个断点或程序运行结束 F11 添加书签 （必备） F12 回到前一个工具窗口 （必备） Tab 缩进 （必备） ESC 从工具窗口进入代码文件窗口 （必备） 连按两次Shift 弹出 Search Everywhere 弹出层 官网快捷键资料 Windows / Linux：https://www." />
+<meta property="og:url" content="https://rainofsilence.github.io/post/idea-keymap-introduce/" />
+<meta property="og:site_name" content="Idea Keymap Introduce" />
+<meta property="og:image"
+  content="https://rainofsilence.github.io/">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2022-08-17 23:44:20 &#43;0800 CST" />
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+  <div style="position: relative">
+  <header class="Header js-details-container Details px-3 px-md-4 px-lg-5 flex-wrap flex-md-nowrap open Details--on">
+    <div class="Header-item mobile-none" style="margin-top: -4px; margin-bottom: -4px;">
+      <a class="Header-link" href="https://rainofsilence.github.io/">
+        <svg class="octicon" height="32" viewBox="0 0 16 16" version="1.1" width="32">
+          <path fill-rule="evenodd"
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item d-md-none">
+      <button class="Header-link btn-link js-details-target" type="button"
+        onclick="document.querySelector('#header-search').style.display = document.querySelector('#header-search').style.display == 'none'? 'block': 'none'">
+        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" version="1.1" width="24">
+          <path fill-rule="evenodd"
+            d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z">
+          </path>
+        </svg>
+      </button>
+    </div>
+    <div style="display: none;" id="header-search"
+      class="Header-item Header-item--full flex-column flex-md-row width-full flex-order-2 flex-md-order-none mr-0 mr-md-3 mt-3 mt-md-0 Details-content--hidden-not-important d-md-flex">
+      <div
+        class="Header-search header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to">
+        <div class="position-relative">
+          <form target="_blank" action="https://www.google.com/search" accept-charset="UTF-8" method="get"
+            autocomplete="off">
+            <label
+              class="Header-search-label form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
+              <input type="text"
+                class="Header-search-input form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+                name="q" value="" placeholder="Search" autocomplete="off">
+              <input type="hidden" name="q" value="site:https://rainofsilence.github.io/">
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="Header-item Header-item--full flex-justify-center d-md-none position-relative">
+      <a class="Header-link " href="https://rainofsilence.github.io/">
+        <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1"
+          width="32">
+          <path fill-rule="evenodd"
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item" style="margin-right: 0;">
+      <a href="javascript:void(0)" class="Header-link no-select" onclick="switchTheme()">
+        <svg style="fill: var(--color-profile-color-modes-toggle-moon);" class="no-select" viewBox="0 0 16 16"
+          version="1.1" width="16" height="16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M4.52208 7.71754C7.5782 7.71754 10.0557 5.24006 10.0557 2.18394C10.0557 1.93498 10.0392 1.68986 10.0074 1.44961C9.95801 1.07727 10.3495 0.771159 10.6474 0.99992C12.1153 2.12716 13.0615 3.89999 13.0615 5.89383C13.0615 9.29958 10.3006 12.0605 6.89485 12.0605C3.95334 12.0605 1.49286 10.001 0.876728 7.24527C0.794841 6.87902 1.23668 6.65289 1.55321 6.85451C2.41106 7.40095 3.4296 7.71754 4.52208 7.71754Z">
+          </path>
+        </svg>
+      </a>
+    </div>
+  </header>
+</div>
+  
+<div>
+  <main>
+    <div class="gisthead pagehead bg-gray-light pb-0 pt-3 mb-4">
+      <div class="px-0">
+        <div class="mb-3 d-flex px-3 px-md-3 px-lg-5">
+          <div class="flex-auto min-width-0 width-fit mr-3">
+            <div class="d-flex">
+              <div class="d-none d-md-block">
+                <a class="avatar mr-2 flex-shrink-0" href="https://rainofsilence.github.io/">
+                  <img class=" avatar-user"
+                    src="https://rainofsilence.github.io/images/avatar.png"
+                    width="32" height="32"></a>
+              </div>
+              <div class="d-flex flex-column">
+                <h1 class="break-word f3 text-normal mb-md-0 mb-1">
+                  <span class="author">
+                    <a href="https://rainofsilence.github.io/">rainofsilence</a></span><span
+                    class="path-divider">/</span><strong class="css-truncate-target mr-1" style="max-width: 410px"><a
+                      href="https://rainofsilence.github.io/post/idea-keymap-introduce/">Idea Keymap Introduce</a></strong>
+                </h1>
+                <div class="note m-0">
+                  Created <relative-time datetime="Wed, 17 Aug 2022 23:44:20 &#43;0800"
+                    class="no-wrap">
+                    Wed, 17 Aug 2022 23:44:20 &#43;0800</relative-time>
+
+                  
+                  <span class="file-info-divider"></span>
+                  Modified <relative-time datetime="Wed, 17 Aug 2022 23:49:11 &#43;0800"
+                    class="no-wrap">
+                    Wed, 17 Aug 2022 23:49:11 &#43;0800</relative-time>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-lg px-3 new-discussion-timeline">
+      <div class="repository-content gist-content">
+        <div>
+          <div class="js-gist-file-update-container js-task-list-container file-box">
+            <div id="file-pytest" class="file my-2">
+              <div id="post-header" class="file-header d-flex flex-md-items-center flex-items-start sticky-header" style="z-index: 2">
+                <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
+                  <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
+                    
+                    <summary id="toc-toggle" onclick="clickToc()" class="btn btn-octicon m-0 mr-2 p-2">
+                      <svg aria-hidden="true" viewBox="0 0 16 16" height="16" width="16" class="octicon octicon-list-unordered">
+                        <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
+                      </svg>
+                    </summary>
+                    <details-menu class="SelectMenu" id="toc-details" style="display: none;">
+                      <div class="SelectMenu-modal rounded-3 mt-1" style="max-height: 340px;">
+                        <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list">
+                        </div>
+                      </div>
+                    </details-menu>
+                      4463 Words
+                    
+
+                  </div>
+                  <div class="file-actions flex-order-2 pt-0">
+                    
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="Box-body px-5 pb-5" style="z-index: 1">
+                <article class="markdown-body entry-content container-lg"><h1 id="intellij-idea-for-win-快捷键">IntelliJ IDEA For Win 快捷键</h1>
+<h2 id="说明">说明</h2>
+<p>IntelliJ IDEA 的便捷操作性，快捷键的功劳占了一大半，对于各个快捷键组合请认真对待。IntelliJ IDEA 本身的设计思维是提倡键盘优先于鼠标的，所以各种快捷键组合层出不穷，对于快捷键设置也有各种支持，对于其他 IDE 的快捷键组合也有预设模板进行支持。</p>
+<p>关于各个快捷键的频率分类上可能每个人都有各自的看法，下面的整理也只是以我个人的使用习惯来划分的，而我应该是可以代表某一部分小众人员。但是我个人还是强烈建议你可以在我的基础上整理一份属于你的快捷键目录（删除掉多余的字眼，只保留快捷键内容），本篇文章也只是起到一个工具和引子的作用。</p>
+<p>对于下面各个快捷键的使介绍描述也许用我个人语言翻译起来不够准确或是不全面，且在不同的文件类型上按出来的效果也可能结果不太一样,所以 <strong>强烈建议</strong> 你自己把各个快捷键都亲自操作下体会下各个快捷键的实际用法。</p>
+<h2 id="ctrl">Ctrl</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">快捷键</th>
+<th style="text-align:left">介绍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F<!-- raw HTML omitted --></td>
+<td style="text-align:left">在当前文件进行文本查找 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->R<!-- raw HTML omitted --></td>
+<td style="text-align:left">在当前文件进行文本替换 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Z<!-- raw HTML omitted --></td>
+<td style="text-align:left">撤销 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Y<!-- raw HTML omitted --></td>
+<td style="text-align:left">删除光标所在行 或 删除选中的行 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->X<!-- raw HTML omitted --></td>
+<td style="text-align:left">剪切光标所在行 或 剪切选择内容</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->C<!-- raw HTML omitted --></td>
+<td style="text-align:left">复制光标所在行 或 复制选择内容</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->D<!-- raw HTML omitted --></td>
+<td style="text-align:left">复制光标所在行 或 复制选择内容，并把复制内容插入光标位置下面 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->W<!-- raw HTML omitted --></td>
+<td style="text-align:left">递进式选择代码块。可选中光标所在的单词或段落，连续按会在原有选中的基础上再扩展选中范围 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->E<!-- raw HTML omitted --></td>
+<td style="text-align:left">显示最近打开的文件记录列表 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->N<!-- raw HTML omitted --></td>
+<td style="text-align:left">根据输入的 <strong>类名</strong> 查找类文件 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->G<!-- raw HTML omitted --></td>
+<td style="text-align:left">在当前文件跳转到指定行处</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->J<!-- raw HTML omitted --></td>
+<td style="text-align:left">插入自定义动态代码模板 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->P<!-- raw HTML omitted --></td>
+<td style="text-align:left">方法参数提示显示 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Q<!-- raw HTML omitted --></td>
+<td style="text-align:left">光标所在的变量 / 类名 / 方法名等上面（也可以在提示补充的时候按），显示文档内容</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->U<!-- raw HTML omitted --></td>
+<td style="text-align:left">前往当前光标所在的方法的父类的方法 / 接口定义 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->B<!-- raw HTML omitted --></td>
+<td style="text-align:left">进入光标所在的方法/变量的接口或是定义处，等效于 <code>Ctrl + 左键单击</code>  <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->K<!-- raw HTML omitted --></td>
+<td style="text-align:left">版本控制提交项目，需要此项目有加入到版本控制才可用</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->T<!-- raw HTML omitted --></td>
+<td style="text-align:left">版本控制更新项目，需要此项目有加入到版本控制才可用</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->H<!-- raw HTML omitted --></td>
+<td style="text-align:left">显示当前类的层次结构</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->O<!-- raw HTML omitted --></td>
+<td style="text-align:left">选择可重写的方法</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->I<!-- raw HTML omitted --></td>
+<td style="text-align:left">选择可继承的方法</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->+<!-- raw HTML omitted --></td>
+<td style="text-align:left">展开代码</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->-<!-- raw HTML omitted --></td>
+<td style="text-align:left">折叠代码</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->/<!-- raw HTML omitted --></td>
+<td style="text-align:left">注释光标所在行代码，会根据当前不同文件类型使用不同的注释符号 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->[<!-- raw HTML omitted --></td>
+<td style="text-align:left">移动光标到当前所在代码的花括号开始位置</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->]<!-- raw HTML omitted --></td>
+<td style="text-align:left">移动光标到当前所在代码的花括号结束位置</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F1<!-- raw HTML omitted --></td>
+<td style="text-align:left">在光标所在的错误代码处显示错误信息 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F3<!-- raw HTML omitted --></td>
+<td style="text-align:left">调转到所选中的词的下一个引用位置 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F4<!-- raw HTML omitted --></td>
+<td style="text-align:left">关闭当前编辑文件</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F8<!-- raw HTML omitted --></td>
+<td style="text-align:left">在 Debug 模式下，设置光标当前行为断点，如果当前已经是断点则去掉断点</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F9<!-- raw HTML omitted --></td>
+<td style="text-align:left">执行 Make Project 操作</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F11<!-- raw HTML omitted --></td>
+<td style="text-align:left">选中文件 / 文件夹，使用助记符设定 / 取消书签 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F12<!-- raw HTML omitted --></td>
+<td style="text-align:left">弹出当前文件结构层，可以在弹出的层上直接输入，进行筛选</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Tab<!-- raw HTML omitted --></td>
+<td style="text-align:left">编辑窗口切换，如果在切换的过程又加按上delete，则是关闭对应选中的窗口</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->End<!-- raw HTML omitted --></td>
+<td style="text-align:left">跳到文件尾</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Home<!-- raw HTML omitted --></td>
+<td style="text-align:left">跳到文件头</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Space<!-- raw HTML omitted --></td>
+<td style="text-align:left">基础代码补全，默认在 Windows 系统上被输入法占用，需要进行修改，建议修改为 <code>Ctrl + 逗号</code> <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Delete<!-- raw HTML omitted --></td>
+<td style="text-align:left">删除光标后面的单词或是中文句 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->BackSpace<!-- raw HTML omitted --></td>
+<td style="text-align:left">删除光标前面的单词或是中文句 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->1,2,3&hellip;9<!-- raw HTML omitted --></td>
+<td style="text-align:left">定位到对应数值的书签位置 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->左键单击<!-- raw HTML omitted --></td>
+<td style="text-align:left">在打开的文件标题上，弹出该文件路径 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->光标定位<!-- raw HTML omitted --></td>
+<td style="text-align:left">按 Ctrl 不要松开，会显示光标所在的类信息摘要</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->左方向键<!-- raw HTML omitted --></td>
+<td style="text-align:left">光标跳转到当前单词 / 中文句的左侧开头位置 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->右方向键<!-- raw HTML omitted --></td>
+<td style="text-align:left">光标跳转到当前单词 / 中文句的右侧开头位置 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->前方向键<!-- raw HTML omitted --></td>
+<td style="text-align:left">等效于鼠标滚轮向前效果 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->后方向键<!-- raw HTML omitted --></td>
+<td style="text-align:left">等效于鼠标滚轮向后效果 <code>（必备）</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="alt">Alt</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">快捷键</th>
+<th style="text-align:left">介绍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->`<!-- raw HTML omitted --></td>
+<td style="text-align:left">显示版本控制常用操作菜单弹出层 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Q<!-- raw HTML omitted --></td>
+<td style="text-align:left">弹出一个提示，显示当前类的声明 / 上下文信息</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F1<!-- raw HTML omitted --></td>
+<td style="text-align:left">显示当前文件选择目标弹出层，弹出层中有很多目标可以进行选择 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F2<!-- raw HTML omitted --></td>
+<td style="text-align:left">对于前面页面，显示各类浏览器打开目标选择弹出层</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F3<!-- raw HTML omitted --></td>
+<td style="text-align:left">选中文本，逐个往下查找相同文本，并高亮显示</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F7<!-- raw HTML omitted --></td>
+<td style="text-align:left">查找光标所在的方法 / 变量 / 类被调用的地方</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F8<!-- raw HTML omitted --></td>
+<td style="text-align:left">在 Debug 的状态下，选中对象，弹出可输入计算表达式调试框，查看该输入内容的调试结果</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Home<!-- raw HTML omitted --></td>
+<td style="text-align:left">定位 / 显示到当前文件的 <code>Navigation Bar</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Enter<!-- raw HTML omitted --></td>
+<td style="text-align:left">IntelliJ IDEA 根据光标所在问题，提供快速修复选择，光标放在的位置不同提示的结果也不同 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Insert<!-- raw HTML omitted --></td>
+<td style="text-align:left">代码自动生成，如生成对象的 set / get 方法，构造函数，toString() 等 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->左方向键<!-- raw HTML omitted --></td>
+<td style="text-align:left">切换当前已打开的窗口中的子视图，比如Debug窗口中有Output、Debugger等子视图，用此快捷键就可以在子视图中切换 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->右方向键<!-- raw HTML omitted --></td>
+<td style="text-align:left">按切换当前已打开的窗口中的子视图，比如Debug窗口中有Output、Debugger等子视图，用此快捷键就可以在子视图中切换 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->前方向键<!-- raw HTML omitted --></td>
+<td style="text-align:left">当前光标跳转到当前文件的前一个方法名位置 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->后方向键<!-- raw HTML omitted --></td>
+<td style="text-align:left">当前光标跳转到当前文件的后一个方法名位置 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->1,2,3&hellip;9<!-- raw HTML omitted --></td>
+<td style="text-align:left">显示对应数值的选项卡，其中 1 是 Project 用得最多 <code>（必备）</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="shift">Shift</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">快捷键</th>
+<th style="text-align:left">介绍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F1<!-- raw HTML omitted --></td>
+<td style="text-align:left">如果有外部文档可以连接外部文档</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F2<!-- raw HTML omitted --></td>
+<td style="text-align:left">跳转到上一个高亮错误 或 警告位置</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F3<!-- raw HTML omitted --></td>
+<td style="text-align:left">在查找模式下，查找匹配上一个</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F4<!-- raw HTML omitted --></td>
+<td style="text-align:left">对当前打开的文件，使用新Windows窗口打开，旧窗口保留</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F6<!-- raw HTML omitted --></td>
+<td style="text-align:left">对文件 / 文件夹 重命名</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F7<!-- raw HTML omitted --></td>
+<td style="text-align:left">在 Debug 模式下，智能步入。断点所在行上有多个方法调用，会弹出进入哪个方法</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F8<!-- raw HTML omitted --></td>
+<td style="text-align:left">在 Debug 模式下，跳出，表现出来的效果跟 <code>F9</code> 一样</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F9<!-- raw HTML omitted --></td>
+<td style="text-align:left">等效于点击工具栏的 <code>Debug</code> 按钮</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F10<!-- raw HTML omitted --></td>
+<td style="text-align:left">等效于点击工具栏的 <code>Run</code> 按钮</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F11<!-- raw HTML omitted --></td>
+<td style="text-align:left">弹出书签显示层 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Tab<!-- raw HTML omitted --></td>
+<td style="text-align:left">取消缩进 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->ESC<!-- raw HTML omitted --></td>
+<td style="text-align:left">隐藏当前 或 最后一个激活的工具窗口</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->End<!-- raw HTML omitted --></td>
+<td style="text-align:left">选中光标到当前行尾位置</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Home<!-- raw HTML omitted --></td>
+<td style="text-align:left">选中光标到当前行头位置</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Enter<!-- raw HTML omitted --></td>
+<td style="text-align:left">开始新一行。光标所在行下空出一行，光标定位到新行位置 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->左键单击<!-- raw HTML omitted --></td>
+<td style="text-align:left">在打开的文件名上按此快捷键，可以关闭当前打开文件 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->滚轮前后滚动<!-- raw HTML omitted --></td>
+<td style="text-align:left">当前文件的横向滚动轴滚动 <code>（必备）</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="ctrl--alt">Ctrl + Alt</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">快捷键</th>
+<th style="text-align:left">介绍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->L<!-- raw HTML omitted --></td>
+<td style="text-align:left">格式化代码，可以对当前文件和整个包目录使用。（有些文件格式化是有特殊要求的，比如 SQL 文件必须设置方言才可被格式化） <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->O<!-- raw HTML omitted --></td>
+<td style="text-align:left">优化导入的类，可以对当前文件和整个包目录使用 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->I<!-- raw HTML omitted --></td>
+<td style="text-align:left">光标所在行 或 选中部分进行自动代码缩进，有点类似格式化</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->T<!-- raw HTML omitted --></td>
+<td style="text-align:left">对选中的代码弹出环绕选项弹出层 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->J<!-- raw HTML omitted --></td>
+<td style="text-align:left">弹出模板选择窗口，将选定的代码加入动态模板中</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->H<!-- raw HTML omitted --></td>
+<td style="text-align:left">调用层次</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->B<!-- raw HTML omitted --></td>
+<td style="text-align:left">在某个调用的方法名上使用会跳到具体的实现处，可以跳过接口</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->C<!-- raw HTML omitted --></td>
+<td style="text-align:left">重构-快速提取常量</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F<!-- raw HTML omitted --></td>
+<td style="text-align:left">重构-快速提取成员变量</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->V<!-- raw HTML omitted --></td>
+<td style="text-align:left">重构-快速提取变量</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Y<!-- raw HTML omitted --></td>
+<td style="text-align:left">同步、刷新</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->S<!-- raw HTML omitted --></td>
+<td style="text-align:left">打开 IntelliJ IDEA 系统设置 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F7<!-- raw HTML omitted --></td>
+<td style="text-align:left">显示使用的地方。寻找被该类或是变量被调用的地方，用弹出框的方式找出来</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F11<!-- raw HTML omitted --></td>
+<td style="text-align:left">切换全屏模式</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Enter<!-- raw HTML omitted --></td>
+<td style="text-align:left">光标所在行上空出一行，光标定位到新行 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Home<!-- raw HTML omitted --></td>
+<td style="text-align:left">弹出跟当前文件有关联的文件弹出层</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Space<!-- raw HTML omitted --></td>
+<td style="text-align:left">类名自动完成</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->左方向键<!-- raw HTML omitted --></td>
+<td style="text-align:left">退回到上一个操作的地方 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->右方向键<!-- raw HTML omitted --></td>
+<td style="text-align:left">前进到上一个操作的地方 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->前方向键<!-- raw HTML omitted --></td>
+<td style="text-align:left">在查找模式下，跳到上个查找的文件</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->后方向键<!-- raw HTML omitted --></td>
+<td style="text-align:left">在查找模式下，跳到下个查找的文件</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->右括号（]）<!-- raw HTML omitted --></td>
+<td style="text-align:left">在打开多个项目的情况下，切换下一个项目窗口</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->左括号（[）<!-- raw HTML omitted --></td>
+<td style="text-align:left">在打开多个项目的情况下，切换上一个项目窗口</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ctrl--shift">Ctrl + Shift</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">快捷键</th>
+<th style="text-align:left">介绍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F<!-- raw HTML omitted --></td>
+<td style="text-align:left">根据输入内容查找整个项目 或 指定目录内文件 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->R<!-- raw HTML omitted --></td>
+<td style="text-align:left">根据输入内容替换对应内容，范围为整个项目 或 指定目录内文件 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->J<!-- raw HTML omitted --></td>
+<td style="text-align:left">自动将下一行合并到当前行末尾 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Z<!-- raw HTML omitted --></td>
+<td style="text-align:left">取消撤销 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->W<!-- raw HTML omitted --></td>
+<td style="text-align:left">递进式取消选择代码块。可选中光标所在的单词或段落，连续按会在原有选中的基础上再扩展取消选中范围 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->N<!-- raw HTML omitted --></td>
+<td style="text-align:left">通过文件名定位 / 打开文件 / 目录，打开目录需要在输入的内容后面多加一个正斜杠 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->U<!-- raw HTML omitted --></td>
+<td style="text-align:left">对选中的代码进行大 / 小写轮流转换 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->T<!-- raw HTML omitted --></td>
+<td style="text-align:left">对当前类生成单元测试类，如果已经存在的单元测试类则可以进行选择 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->C<!-- raw HTML omitted --></td>
+<td style="text-align:left">复制当前文件磁盘路径到剪贴板 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->V<!-- raw HTML omitted --></td>
+<td style="text-align:left">弹出缓存的最近拷贝的内容管理器弹出层</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->E<!-- raw HTML omitted --></td>
+<td style="text-align:left">显示最近修改的文件列表的弹出层</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->H<!-- raw HTML omitted --></td>
+<td style="text-align:left">显示方法层次结构</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->B<!-- raw HTML omitted --></td>
+<td style="text-align:left">跳转到类型声明处 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->I<!-- raw HTML omitted --></td>
+<td style="text-align:left">快速查看光标所在的方法 或 类的定义</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->A<!-- raw HTML omitted --></td>
+<td style="text-align:left">查找动作 / 设置</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->/<!-- raw HTML omitted --></td>
+<td style="text-align:left">代码块注释 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->[<!-- raw HTML omitted --></td>
+<td style="text-align:left">选中从光标所在位置到它的顶部中括号位置 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->]<!-- raw HTML omitted --></td>
+<td style="text-align:left">选中从光标所在位置到它的底部中括号位置 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->+<!-- raw HTML omitted --></td>
+<td style="text-align:left">展开所有代码 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->-<!-- raw HTML omitted --></td>
+<td style="text-align:left">折叠所有代码 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F7<!-- raw HTML omitted --></td>
+<td style="text-align:left">高亮显示所有该选中文本，按Esc高亮消失 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F8<!-- raw HTML omitted --></td>
+<td style="text-align:left">在 Debug 模式下，指定断点进入条件</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F9<!-- raw HTML omitted --></td>
+<td style="text-align:left">编译选中的文件 / 包 / Module</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F12<!-- raw HTML omitted --></td>
+<td style="text-align:left">编辑器最大化 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Space<!-- raw HTML omitted --></td>
+<td style="text-align:left">智能代码提示</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Enter<!-- raw HTML omitted --></td>
+<td style="text-align:left">自动结束代码，行末自动添加分号 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Backspace<!-- raw HTML omitted --></td>
+<td style="text-align:left">退回到上次修改的地方 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->1,2,3&hellip;9<!-- raw HTML omitted --></td>
+<td style="text-align:left">快速添加指定数值的书签 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->左键单击<!-- raw HTML omitted --></td>
+<td style="text-align:left">把光标放在某个类变量上，按此快捷键可以直接定位到该类中 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->左方向键<!-- raw HTML omitted --></td>
+<td style="text-align:left">在代码文件上，光标跳转到当前单词 / 中文句的左侧开头位置，同时选中该单词 / 中文句 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->右方向键<!-- raw HTML omitted --></td>
+<td style="text-align:left">在代码文件上，光标跳转到当前单词 / 中文句的右侧开头位置，同时选中该单词 / 中文句 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->前方向键<!-- raw HTML omitted --></td>
+<td style="text-align:left">光标放在方法名上，将方法移动到上一个方法前面，调整方法排序 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->后方向键<!-- raw HTML omitted --></td>
+<td style="text-align:left">光标放在方法名上，将方法移动到下一个方法前面，调整方法排序 <code>（必备）</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="alt--shift">Alt + Shift</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">快捷键</th>
+<th style="text-align:left">介绍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->N<!-- raw HTML omitted --></td>
+<td style="text-align:left">选择 / 添加 task <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F<!-- raw HTML omitted --></td>
+<td style="text-align:left">显示添加到收藏夹弹出层 / 添加到收藏夹</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->C<!-- raw HTML omitted --></td>
+<td style="text-align:left">查看最近操作项目的变化情况列表</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->I<!-- raw HTML omitted --></td>
+<td style="text-align:left">查看项目当前文件</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F7<!-- raw HTML omitted --></td>
+<td style="text-align:left">在 Debug 模式下，下一步，进入当前方法体内，如果方法体还有方法，则会进入该内嵌的方法中，依此循环进入</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F9<!-- raw HTML omitted --></td>
+<td style="text-align:left">弹出 <code>Debug</code>  的可选择菜单</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->F10<!-- raw HTML omitted --></td>
+<td style="text-align:left">弹出 <code>Run</code>  的可选择菜单</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->左键双击<!-- raw HTML omitted --></td>
+<td style="text-align:left">选择被双击的单词 / 中文句，按住不放，可以同时选择其他单词 / 中文句 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->前方向键<!-- raw HTML omitted --></td>
+<td style="text-align:left">移动光标所在行向上移动 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->后方向键<!-- raw HTML omitted --></td>
+<td style="text-align:left">移动光标所在行向下移动 <code>（必备）</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="ctrl--shift--alt">Ctrl + Shift + Alt</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">快捷键</th>
+<th style="text-align:left">介绍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->V<!-- raw HTML omitted --></td>
+<td style="text-align:left">无格式黏贴 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->N<!-- raw HTML omitted --></td>
+<td style="text-align:left">前往指定的变量 / 方法</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->S<!-- raw HTML omitted --></td>
+<td style="text-align:left">打开当前项目设置 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Ctrl<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Shift<!-- raw HTML omitted --> + <!-- raw HTML omitted -->Alt<!-- raw HTML omitted --> + <!-- raw HTML omitted -->C<!-- raw HTML omitted --></td>
+<td style="text-align:left">复制参考信息</td>
+</tr>
+</tbody>
+</table>
+<h2 id="其他">其他</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">快捷键</th>
+<th style="text-align:left">介绍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->F2<!-- raw HTML omitted --></td>
+<td style="text-align:left">跳转到下一个高亮错误 或 警告位置 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->F3<!-- raw HTML omitted --></td>
+<td style="text-align:left">在查找模式下，定位到下一个匹配处</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->F4<!-- raw HTML omitted --></td>
+<td style="text-align:left">编辑源 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->F7<!-- raw HTML omitted --></td>
+<td style="text-align:left">在 Debug 模式下，进入下一步，如果当前行断点是一个方法，则进入当前方法体内，如果该方法体还有方法，则不会进入该内嵌的方法中</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->F8<!-- raw HTML omitted --></td>
+<td style="text-align:left">在 Debug 模式下，进入下一步，如果当前行断点是一个方法，则不进入当前方法体内</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->F9<!-- raw HTML omitted --></td>
+<td style="text-align:left">在 Debug 模式下，恢复程序运行，直至下个断点或程序运行结束</td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->F11<!-- raw HTML omitted --></td>
+<td style="text-align:left">添加书签 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->F12<!-- raw HTML omitted --></td>
+<td style="text-align:left">回到前一个工具窗口 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->Tab<!-- raw HTML omitted --></td>
+<td style="text-align:left">缩进 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->ESC<!-- raw HTML omitted --></td>
+<td style="text-align:left">从工具窗口进入代码文件窗口 <code>（必备）</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><!-- raw HTML omitted -->连按两次Shift<!-- raw HTML omitted --></td>
+<td style="text-align:left">弹出 <code>Search Everywhere</code> 弹出层</td>
+</tr>
+</tbody>
+</table>
+<h2 id="官网快捷键资料">官网快捷键资料</h2>
+<blockquote>
+<ul>
+<li>Windows / Linux：<a href="https://www.jetbrains.com/idea/docs/IntelliJIDEA_ReferenceCard.pdf">https://www.jetbrains.com/idea/docs/IntelliJIDEA_ReferenceCard.pdf</a></li>
+<li>Mac OS X：<a href="https://www.jetbrains.com/idea/docs/IntelliJIDEA_ReferenceCard_Mac.pdf">https://www.jetbrains.com/idea/docs/IntelliJIDEA_ReferenceCard_Mac.pdf</a></li>
+</ul>
+</blockquote>
+</article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script type="application/javascript" src='https://rainofsilence.github.io/js/toc.js'></script>
+<link rel="stylesheet" href='https://rainofsilence.github.io/css/toc.css' />
+
+<div id="gitalk-container" class="gitalk-container"></div>
+<link rel="stylesheet" href='https://rainofsilence.github.io/css/gitalk.css'>
+<script src='https://rainofsilence.github.io/js/gitalk.min.js'></script>
+<script>
+  const gitalk = new Gitalk({
+    clientID: 'Your client ID',
+    clientSecret: 'Your client secret',
+    repo: 'rainofsilence',
+    owner: 'rainofsilence',
+    admin: ['rainofsilence'],
+    id: eval("location.pathname"), 
+    distractionFreeMode: false 
+  });
+  (function() {
+    gitalk.render('gitalk-container');
+  })();
+</script>
+
+
+  <div class="footer container-xl width-full p-responsive">
+  <div
+    class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mr-lg-4" href="https://rainofsilence.github.io/">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24">
+        <path fill-rule="evenodd"
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+        </path>
+      </svg>
+    </a>
+    <ul class="list-style-none d-flex flex-wrap col-12 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      
+      <li class="mr-3 mr-lg-0">Theme by <a href='https://github.com/MeiK2333/github-style'>github-style</a></li>
+      
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+
+
+</div>
+</body>
+
+<script type="application/javascript" src="https://rainofsilence.github.io/js/github-style.js"></script>
+
+
+
+
+</html>
