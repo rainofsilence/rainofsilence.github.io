@@ -10,7 +10,7 @@
     <link rel="stylesheet" href='https://rainofsilence.github.io/css/light.css' />
     <link rel="stylesheet" href='https://rainofsilence.github.io/css/dark.css' />
     <link rel="stylesheet" href='https://rainofsilence.github.io/css/syntax.css' />
-    <title>Readme - Rainofsilence&#39;s site</title>
+    <title>MacOS Reset Privacy Authorization - Rainofsilence&#39;s site</title>
     
     <link rel="icon" type="image/x-icon" href='/images/github.png'>
     
@@ -18,17 +18,17 @@
 
     
     <meta name="description"
-  content="" />
+  content="通过命令重置macOS隐私授权设置" />
 <meta name="keywords"
   content='blog, google analytics' />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://rainofsilence.github.io/readme/" />
+<link rel="canonical" href="https://rainofsilence.github.io/post/macos-reset-privacy-authorization/" />
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Readme - Rainofsilence&#39;s site" />
+<meta name="twitter:title" content="MacOS Reset Privacy Authorization - Rainofsilence&#39;s site" />
 <meta name="twitter:description"
-  content="" />
+  content="通过命令重置macOS隐私授权设置" />
 <meta name="twitter:site" content="https://rainofsilence.github.io/" />
 <meta name="twitter:creator" content="" />
 <meta name="twitter:image"
@@ -36,17 +36,17 @@
 
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Readme - Rainofsilence&#39;s site">
+<meta property="og:title" content="MacOS Reset Privacy Authorization - Rainofsilence&#39;s site">
 <meta property="og:description"
-  content="" />
-<meta property="og:url" content="https://rainofsilence.github.io/readme/" />
-<meta property="og:site_name" content="Readme" />
+  content="通过命令重置macOS隐私授权设置" />
+<meta property="og:url" content="https://rainofsilence.github.io/post/macos-reset-privacy-authorization/" />
+<meta property="og:site_name" content="MacOS Reset Privacy Authorization" />
 <meta property="og:image"
   content="https://rainofsilence.github.io/">
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
 
-<meta property="article:published_time" content="2022-08-12 17:19:22 &#43;0800 CST" />
+<meta property="article:published_time" content="2022-08-22 18:43:15 &#43;0800 CST" />
 
 
 
@@ -141,18 +141,18 @@
                   <span class="author">
                     <a href="https://rainofsilence.github.io/">rainofsilence</a></span><span
                     class="path-divider">/</span><strong class="css-truncate-target mr-1" style="max-width: 410px"><a
-                      href="https://rainofsilence.github.io/readme/">Readme</a></strong>
+                      href="https://rainofsilence.github.io/post/macos-reset-privacy-authorization/">MacOS Reset Privacy Authorization</a></strong>
                 </h1>
                 <div class="note m-0">
-                  Created <relative-time datetime="Fri, 12 Aug 2022 17:19:22 &#43;0800"
+                  Created <relative-time datetime="Mon, 22 Aug 2022 18:43:15 &#43;0800"
                     class="no-wrap">
-                    Fri, 12 Aug 2022 17:19:22 &#43;0800</relative-time>
+                    Mon, 22 Aug 2022 18:43:15 &#43;0800</relative-time>
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Fri, 12 Aug 2022 19:25:22 &#43;0800"
+                  Modified <relative-time datetime="Mon, 22 Aug 2022 21:34:47 &#43;0800"
                     class="no-wrap">
-                    Fri, 12 Aug 2022 19:25:22 &#43;0800</relative-time>
+                    Mon, 22 Aug 2022 21:34:47 &#43;0800</relative-time>
                   
                 </div>
               </div>
@@ -182,7 +182,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      0 Words
+                      165 Words
                     
 
                   </div>
@@ -194,7 +194,18 @@
 
 
               <div class="Box-body px-5 pb-5" style="z-index: 1">
-                <article class="markdown-body entry-content container-lg"></article>
+                <article class="markdown-body entry-content container-lg"><p>像一些软件会请求获取通讯录、日历、照片的访问权限，这些隐私授权设置保存在「系统偏好设置 - 安全性与隐私 - 隐私」里，时间长了里面的隐私设置会越来越多，
+而且有时候应用删除了设置还在。大部分设置都不能手动删除，只能打开关闭。</p>
+<p>我们可以在 Terminal 中使用 tccutil 命令来重置这些隐私授权：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 重置通讯录</span>
+</span></span><span class="line"><span class="cl">tccutil reset AddressBook
+</span></span><span class="line"><span class="cl"><span class="c1"># 重置日历</span>
+</span></span><span class="line"><span class="cl">tccutil reset Calendar
+</span></span><span class="line"><span class="cl"><span class="c1"># 重置提醒事项</span>
+</span></span><span class="line"><span class="cl">tccutil reset Reminders
+</span></span><span class="line"><span class="cl"><span class="c1"># 重置照片</span>
+</span></span><span class="line"><span class="cl">tccutil reset Photos
+</span></span></code></pre></div></article>
               </div>
             </div>
           </div>
