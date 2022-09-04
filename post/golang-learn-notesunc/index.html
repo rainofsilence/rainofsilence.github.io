@@ -277,9 +277,9 @@
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Sun, 04 Sep 2022 15:53:52 &#43;0800"
+                  Modified <relative-time datetime="Sun, 04 Sep 2022 20:24:30 &#43;0800"
                     class="no-wrap">
-                    Sun, 04 Sep 2022 15:53:52 &#43;0800</relative-time>
+                    Sun, 04 Sep 2022 20:24:30 &#43;0800</relative-time>
                   
                 </div>
               </div>
@@ -309,9 +309,9 @@
                         </div>
                       </div>
                     </details-menu>
-                      511 Words
+                      952 Words
                     <span class="file-info-divider"></span>
-                                        2 min
+                                        4 min
 
                   </div>
                   <div class="file-actions flex-order-2 pt-0">
@@ -440,6 +440,42 @@
 </tr>
 </tbody>
 </table>
+<h2 id="注释">注释</h2>
+<h3 id="1-包注释">1. 包注释</h3>
+<p>每个包都应该又个包注释 一个位于<code>package</code>子句之前的快注释 包如果有多个<code>go</code>文件 只需要出现在一个<code>go</code>文件中</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-GoLang" data-lang="GoLang"><span class="line"><span class="cl"><span class="c1">// `util`包 该包包含了项目共用的一些常量 封装了项目的一些共用函数。
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 创建人: sumin
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 创建时间: 20220904
+</span></span></span></code></pre></div><h3 id="2-结构接口注释">2. 结构(接口)注释</h3>
+<p>示例如下:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-GoLang" data-lang="GoLang"><span class="line"><span class="cl"><span class="c1">// User 用户对象 定义了用户的基础信息
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">type</span> <span class="nx">User</span> <span class="kd">struct</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">Username</span> <span class="kt">string</span> <span class="c1">// 用户名
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">Email</span>    <span class="kt">string</span> <span class="c1">// 邮箱
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><h3 id="3-函数方法注释">3. 函数(方法)注释</h3>
+<p>函数的注释应该包含三个方面(严格按照以下顺序撰写)</p>
+<ul>
+<li>简要说明 格式说明: 以函数名开头 &ldquo;,&ldquo;分隔说明部分</li>
+<li>参数列表: 每行一个参数 参数名开头 &ldquo;,&ldquo;分隔说明部分</li>
+<li>返回值: 每行一个返回值</li>
+</ul>
+<p>示例如下：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-GoLang" data-lang="GoLang"><span class="line"><span class="cl"><span class="c1">// NewAttrModel, 属性数据操作类的工厂方法
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 参数:
+</span></span></span><span class="line"><span class="cl"><span class="c1">//      ctx: 上下问信息
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 返回值:
+</span></span></span><span class="line"><span class="cl"><span class="c1">//      属性操作类指针
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">func</span> <span class="nf">NewAttrModel</span><span class="p">(</span><span class="nx">ctx</span> <span class="o">*</span><span class="nx">common</span><span class="p">.</span><span class="nx">Context</span><span class="p">)</span> <span class="o">*</span><span class="nx">AttrModel</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="4-代码逻辑注释">4. 代码逻辑注释</h3>
+<p>对于一些关键位置的代码逻辑，或者局部较为复杂的逻辑，需要有相应的逻辑说明，方便其他开发这阅读。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-GoLang" data-lang="GoLang"><span class="line"><span class="cl"><span class="c1">// 从`Redis`中批量读取属性 对于没有读取到的`ID` 记录到一个数组里面，准备从`DB`中获取
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">XXX</span>
+</span></span><span class="line"><span class="cl"><span class="nx">XXXX</span>
+</span></span></code></pre></div><h3 id="5-注释风格">5. 注释风格</h3>
+<p>参照自己的习惯并统一风格</p>
 </article>
               </div>
 
