@@ -6,7 +6,16 @@
     <description>Recent content on Rainofsilence&#39;s site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 31 Aug 2022 18:55:32 +0800</lastBuildDate><atom:link href="https://rainofsilence.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Sep 2022 14:41:57 +0800</lastBuildDate><atom:link href="https://rainofsilence.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Golang Learn Notes(UNC)</title>
+      <link>https://rainofsilence.github.io/post/golang-learn-notesunc/</link>
+      <pubDate>Sun, 04 Sep 2022 14:41:57 +0800</pubDate>
+      
+      <guid>https://rainofsilence.github.io/post/golang-learn-notesunc/</guid>
+      <description>GoLang 学习笔记之命名规范</description>
+    </item>
+    
     <item>
       <title>Set Up Golang for Mac</title>
       <link>https://rainofsilence.github.io/post/set-up-golang-for-mac/</link>

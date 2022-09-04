@@ -15,7 +15,7 @@
   <link rel="stylesheet" href='https://rainofsilence.github.io/css/syntax.css' />
   
   <title>
-    Set Up Golang for Mac | Rainofsilence&#39;s site
+    Golang Learn Notes(UNC) | Rainofsilence&#39;s site
   </title>
   
   <link rel="icon" type="image/x-icon" href="/images/github.png" />
@@ -25,20 +25,20 @@
   
   <meta
   name="description"
-  content="macOS 搭建 GoLang 环境"
+  content="GoLang 学习笔记之命名规范"
 />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://rainofsilence.github.io/post/set-up-golang-for-mac/" />
+<link rel="canonical" href="https://rainofsilence.github.io/post/golang-learn-notesunc/" />
 
 
 <meta name="twitter:card" content="summary" />
 <meta
   name="twitter:title"
-  content="Set Up Golang for Mac - Rainofsilence&#39;s site"
+  content="Golang Learn Notes(UNC) - Rainofsilence&#39;s site"
 />
 <meta
   name="twitter:description"
-  content="macOS 搭建 GoLang 环境"
+  content="GoLang 学习笔记之命名规范"
 />
 <meta name="twitter:site" content="https://rainofsilence.github.io/" />
 <meta name="twitter:creator" content="" />
@@ -54,14 +54,14 @@
 />
 <meta
   property="og:title"
-  content="Set Up Golang for Mac - Rainofsilence&#39;s site"
+  content="Golang Learn Notes(UNC) - Rainofsilence&#39;s site"
 />
 <meta
   property="og:description"
-  content="macOS 搭建 GoLang 环境"
+  content="GoLang 学习笔记之命名规范"
 />
-<meta property="og:url" content="https://rainofsilence.github.io/post/set-up-golang-for-mac/" />
-<meta property="og:site_name" content="Set Up Golang for Mac" />
+<meta property="og:url" content="https://rainofsilence.github.io/post/golang-learn-notesunc/" />
+<meta property="og:site_name" content="Golang Learn Notes(UNC)" />
 <meta
   property="og:image"
   content="https://rainofsilence.github.io/"
@@ -69,7 +69,7 @@
 <meta property="og:image:width" content="2048" />
 <meta property="og:image:height" content="1024" />
 
-<meta property="article:published_time" content="2022-08-31 18:55:32 &#43;0800 CST" />
+<meta property="article:published_time" content="2022-09-04 14:41:57 &#43;0800 CST" />
 
 
 
@@ -268,18 +268,18 @@
                   <span class="author">
                     <a href="https://rainofsilence.github.io/">rainofsilence</a></span><span
                     class="path-divider">/</span><strong class="css-truncate-target mr-1" style="max-width: 410px"><a
-                      href="https://rainofsilence.github.io/post/set-up-golang-for-mac/">Set Up Golang for Mac</a></strong>
+                      href="https://rainofsilence.github.io/post/golang-learn-notesunc/">Golang Learn Notes(UNC)</a></strong>
                 </h1>
                 <div class="note m-0">
-                  Created <relative-time datetime="Wed, 31 Aug 2022 18:55:32 &#43;0800"
+                  Created <relative-time datetime="Sun, 04 Sep 2022 14:41:57 &#43;0800"
                     class="no-wrap">
-                    Wed, 31 Aug 2022 18:55:32 &#43;0800</relative-time>
+                    Sun, 04 Sep 2022 14:41:57 &#43;0800</relative-time>
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Sun, 04 Sep 2022 14:43:21 &#43;0800"
+                  Modified <relative-time datetime="Sun, 04 Sep 2022 15:53:52 &#43;0800"
                     class="no-wrap">
-                    Sun, 04 Sep 2022 14:43:21 &#43;0800</relative-time>
+                    Sun, 04 Sep 2022 15:53:52 &#43;0800</relative-time>
                   
                 </div>
               </div>
@@ -309,9 +309,9 @@
                         </div>
                       </div>
                     </details-menu>
-                      182 Words
+                      511 Words
                     <span class="file-info-divider"></span>
-                                        1 min
+                                        2 min
 
                   </div>
                   <div class="file-actions flex-order-2 pt-0">
@@ -333,17 +333,113 @@
 
 
               <div class="Box-body px-5 pb-5" style="z-index: 1">
-                <article class="markdown-body entry-content container-lg"><h2 id="im1-使用homebrew安装">IM1. 使用<code>Homebrew</code>安装</h2>
-<p><a href="https://brew.sh"><code>Homebrew</code>安装方式</a></p>
-<h3 id="step1-install">Step1. install</h3>
-<p>使用<code>brew</code>安装命令</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">brew install go
-</span></span></code></pre></div><h3 id="step2-configure">Step2. configure</h3>
-<p>建议在当前用户环境变量配置文件中配置。可以在<code>~/.bash_profile</code>或<code>~/.zshrc</code>中配置，没有就新建文件。配置完记得使用<code>source ~/.zshrc</code>刷新配置。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-.zshrc" data-lang=".zshrc"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">GOPATH</span><span class="o">=</span>/User/<span class="o">{</span>自己的用户名<span class="o">}</span>/<span class="o">{</span>自定义Go项目存放路径<span class="o">}</span>
-</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">GOBIN</span><span class="o">=</span><span class="nv">$GOPATH</span>/bin
-</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$GOBIN</span>
-</span></span></code></pre></div><p>其他配置有空完善&hellip;</p>
+                <article class="markdown-body entry-content container-lg"><h2 id="命名规范">命名规范</h2>
+<h3 id="1-包命名">1. 包命名</h3>
+<p>包名应该为<strong>小写</strong>单词 不要使用下划线或者混合大小写</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-GoLang" data-lang="GoLang"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nx">demo</span>
+</span></span><span class="line"><span class="cl"><span class="kn">package</span> <span class="nx">main</span>
+</span></span></code></pre></div><h3 id="2-文件命名">2. 文件命名</h3>
+<p>应该为<strong>小写</strong>单词 使用<strong>下划线</strong>分隔各个单词</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-GoLang" data-lang="GoLang"><span class="line"><span class="cl"><span class="nx">hello_world</span><span class="p">.</span><span class="k">go</span>
+</span></span></code></pre></div><h3 id="3-结构体命名">3. 结构体命名</h3>
+<ul>
+<li>采用驼峰命名法，首字母根据访问控制大写或或者小写</li>
+<li><code>struct</code>申明和初始化格式采用多行</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-GoLang" data-lang="GoLang"><span class="line"><span class="cl"><span class="c1">// 多行申明
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">type</span> <span class="nx">User</span> <span class="kd">struct</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">Username</span> <span class="kt">string</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">Email</span> <span class="kt">string</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 多行初始化
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">u</span> <span class="o">:=</span> <span class="nx">User</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">Username</span><span class="p">:</span> <span class="s">&#34;sumin&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">Email</span><span class="p">:</span> <span class="s">&#34;sumin@hello.com&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="4-接口命名">4. 接口命名</h3>
+<ul>
+<li>命名规则基本和上面的结构体类型一致</li>
+<li>单个函数的结构名以&quot;er&quot;作为后缀</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-GoLang" data-lang="GoLang"><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">Reader</span> <span class="kd">interface</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">Read</span><span class="p">(</span><span class="nx">p</span> <span class="p">[]</span><span class="kt">byte</span><span class="p">)</span> <span class="p">(</span><span class="nx">n</span> <span class="kt">int</span><span class="p">,</span> <span class="nx">err</span> <span class="kt">error</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="5-变量命名">5. 变量命名</h3>
+<ul>
+<li>和结构体类似 变量名称一般遵循驼峰法 首字母根据访问控制原则大写或者小写 但遇到特有名词时 需要遵循以下规则：
+<ul>
+<li>如果变量为私有且特有名词为首个单词则使用小写 如<code>apiClient</code></li>
+<li>其他情况都应当使用该名词原有的写法 如 <code>APICilent</code>、<code>repoID</code>、<code>UserID</code></li>
+<li>错误示例 <code>UrlArray</code> 应该写成<code>urlArray</code>或者<code>URLArray</code></li>
+</ul>
+</li>
+<li>若变量类型为<code>bool</code>类型 则应以<code>has</code>、<code>is</code>、<code>can</code>、<code>allow</code>开头</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-GoLang" data-lang="GoLang"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">isExist</span> <span class="kt">bool</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">hasConflict</span> <span class="kt">bool</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">canManage</span> <span class="kt">bool</span>
+</span></span><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">allowGitHook</span>
+</span></span></code></pre></div><h3 id="6-常量命名">6. 常量命名</h3>
+<p>常量均需要使用全部大写字母组成并以下划线分隔</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-GoLang" data-lang="GoLang"><span class="line"><span class="cl"><span class="kd">const</span> <span class="nx">APP_VER</span> <span class="p">=</span> <span class="s">&#34;`1.0.0&#34;</span>
+</span></span></code></pre></div><p>如果是枚举类型的常量 需要先创建相应类型</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-GoLang" data-lang="GoLang"><span class="line"><span class="cl"><span class="kd">type</span> <span class="nx">Scheme</span> <span class="kt">string</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">const</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">HTTP</span> <span class="nx">Scheme</span> <span class="p">=</span> <span class="s">&#34;http&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">HTTPS</span> <span class="nx">Scheme</span> <span class="p">=</span> <span class="s">&#34;https&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span></code></pre></div><h3 id="7-关键字">7. 关键字</h3>
+<p>保留字不能用作常量、变量或任何其他标识符名称</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>break</td>
+<td>default</td>
+<td>func</td>
+<td>interface</td>
+<td>select</td>
+</tr>
+<tr>
+<td>case</td>
+<td>defer</td>
+<td>Go</td>
+<td>map</td>
+<td>Struct</td>
+</tr>
+<tr>
+<td>chan</td>
+<td>else</td>
+<td>Goto</td>
+<td>package</td>
+<td>Switch</td>
+</tr>
+<tr>
+<td>const</td>
+<td>fallthrough</td>
+<td>if</td>
+<td>range</td>
+<td>Type</td>
+</tr>
+<tr>
+<td>continue</td>
+<td>for</td>
+<td>import</td>
+<td>return</td>
+<td>Var</td>
+</tr>
+</tbody>
+</table>
 </article>
               </div>
 
@@ -356,13 +452,11 @@
       <div class="pagination-nav">
         <div class="pagination-button next-post">
           
-          <div>«&nbsp;</div><a class="pagination-link link-reverse" href="https://rainofsilence.github.io/post/golang-learn-notesunc/"> Golang Learn Notes(UNC)</a>
-          
         </div>
         
         <div class="pagination-button previous-post">
           
-          <a class="pagination-link link-reverse" href="https://rainofsilence.github.io/post/macos-reset-privacy-authorization/">MacOS Reset Privacy Authorization&nbsp;</a><div> »</div>
+          <a class="pagination-link link-reverse" href="https://rainofsilence.github.io/post/set-up-golang-for-mac/">Set Up Golang for Mac&nbsp;</a><div> »</div>
           
         </div>
       </div>
