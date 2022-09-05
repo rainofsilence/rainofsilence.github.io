@@ -277,9 +277,9 @@
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Sun, 04 Sep 2022 20:24:30 &#43;0800"
+                  Modified <relative-time datetime="Mon, 05 Sep 2022 21:05:10 &#43;0800"
                     class="no-wrap">
-                    Sun, 04 Sep 2022 20:24:30 &#43;0800</relative-time>
+                    Mon, 05 Sep 2022 21:05:10 &#43;0800</relative-time>
                   
                 </div>
               </div>
@@ -309,9 +309,9 @@
                         </div>
                       </div>
                     </details-menu>
-                      952 Words
+                      1576 Words
                     <span class="file-info-divider"></span>
-                                        4 min
+                                        7 min
 
                   </div>
                   <div class="file-actions flex-order-2 pt-0">
@@ -476,6 +476,73 @@
 </span></span><span class="line"><span class="cl"><span class="nx">XXXX</span>
 </span></span></code></pre></div><h3 id="5-注释风格">5. 注释风格</h3>
 <p>参照自己的习惯并统一风格</p>
+<h2 id="代码风格">代码风格</h2>
+<h3 id="1-缩进和折行">1. 缩进和折行</h3>
+<ul>
+<li>缩进直接使用<code>gofmt</code>工具格式化(<code>gofmt</code>是使用<code>tab</code>缩进的)</li>
+<li>一行最长不超过120个字符</li>
+</ul>
+<h3 id="2-语句的结尾">2. 语句的结尾</h3>
+<ul>
+<li><code>Go</code>语言中不需要类似于<code>Java</code>需要&rdquo;;&ldquo;来结尾 默认一行就是一条数据 如果补上&rdquo;;&ldquo;也不会报错
+-如果打算将多个语句写在同一行 则必须使用&rdquo;;&ldquo;分隔</li>
+</ul>
+<h3 id="3-括号和空格">3. 括号和空格</h3>
+<p>所有的运算符和操作数之间要留空格</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-GoLang" data-lang="GoLang"><span class="line"><span class="cl"><span class="c1">// 正确写法
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">if</span> <span class="nx">a</span> <span class="p">&gt;</span> <span class="mi">0</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 错误写法
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">if</span> <span class="nx">a</span><span class="p">&gt;</span><span class="mi">0</span>  <span class="c1">// a,0 和 &gt; 之间需要空格
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">{</span>       <span class="c1">// 左大括号不可以换行 会报语法错误
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="4-import规范">4. <code>import</code>规范</h3>
+<p><code>import</code>在多行的情况下 <code>goimports</code>会自动帮你格式化 但在文件中只引入了一个<code>packge</code>时 建议采用如下格式:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-GoLang" data-lang="GoLang"><span class="line"><span class="cl"><span class="kn">import</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;fmt&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span></code></pre></div><p>如果引入了三种类型的包: 标准库包 程序内部包 第三方包 建议采用如下格式:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-GoLang" data-lang="GoLang"><span class="line"><span class="cl"><span class="kn">import</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;encoding/json&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;strings&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;myproject/modules&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;myproject/controller&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;github.com/astaxie/beego&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;github.com/go-sql-driver/mysql&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span></code></pre></div><p>在项目中不是使用相对路径引入包</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-GoLang" data-lang="GoLang"><span class="line"><span class="cl"><span class="c1">// 这是不好的导入
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kn">import</span> <span class="s">&#34;../net&#34;</span>
+</span></span></code></pre></div><h3 id="5-错误处理">5. 错误处理</h3>
+<ul>
+<li>错误处理的原则就是不能丢弃任何有淡灰`err``的调用 不要使用&rdquo;_&ldquo;丢弃 必须全部处理</li>
+<li>尽早<code>return</code>: 一旦有错误发生 马上返回</li>
+<li>尽量不要使用<code>panic</code></li>
+<li>错误描述如果是英文必须为小写 不需要标点结尾</li>
+<li>采用独立的错误流进行处理</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-GoLang" data-lang="GoLang"><span class="line"><span class="cl"><span class="c1">// 错误写法
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="nx">null</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// error handing
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// nromal code
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 正确写法
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="nx">null</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// error handing
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">return</span> <span class="c1">// or continue, etc.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// nromal code
+</span></span></span></code></pre></div><h3 id="6-测试">6. 测试</h3>
+<ul>
+<li>单元测试文件名命名规范为<code>example_test.go</code></li>
+<li>测试用例的函数名称必须以<code>Test</code>开头</li>
+<li>每个重要的函数都要首先编写测试用例 测试用例和正规代码一起提交方便进行回归测试</li>
+</ul>
 </article>
               </div>
 
