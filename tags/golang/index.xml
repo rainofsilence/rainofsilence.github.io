@@ -6,7 +6,16 @@
     <description>Recent content in GoLang on Rainofsilence&#39;s site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 06 Sep 2022 23:17:24 +0800</lastBuildDate><atom:link href="https://rainofsilence.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Sep 2022 20:45:48 +0800</lastBuildDate><atom:link href="https://rainofsilence.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Goland Learn Notes(Constant)</title>
+      <link>https://rainofsilence.github.io/post/goland-learn-notesconstant/</link>
+      <pubDate>Thu, 08 Sep 2022 20:45:48 +0800</pubDate>
+      
+      <guid>https://rainofsilence.github.io/post/goland-learn-notesconstant/</guid>
+      <description>GoLang 学习笔记之常量</description>
+    </item>
+    
     <item>
       <title>Goland Learn Notes(Variable)</title>
       <link>https://rainofsilence.github.io/post/goland-learn-notesvariable/</link>

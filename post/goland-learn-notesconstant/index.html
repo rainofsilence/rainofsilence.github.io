@@ -15,7 +15,7 @@
   <link rel="stylesheet" href='https://rainofsilence.github.io/css/syntax.css' />
   
   <title>
-    Goland Learn Notes(Variable) | Rainofsilence&#39;s site
+    Goland Learn Notes(Constant) | Rainofsilence&#39;s site
   </title>
   
   <link rel="icon" type="image/x-icon" href="/images/github.png" />
@@ -25,20 +25,20 @@
   
   <meta
   name="description"
-  content="GoLang 学习笔记之变量"
+  content="GoLang 学习笔记之常量"
 />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://rainofsilence.github.io/post/goland-learn-notesvariable/" />
+<link rel="canonical" href="https://rainofsilence.github.io/post/goland-learn-notesconstant/" />
 
 
 <meta name="twitter:card" content="summary" />
 <meta
   name="twitter:title"
-  content="Goland Learn Notes(Variable) - Rainofsilence&#39;s site"
+  content="Goland Learn Notes(Constant) - Rainofsilence&#39;s site"
 />
 <meta
   name="twitter:description"
-  content="GoLang 学习笔记之变量"
+  content="GoLang 学习笔记之常量"
 />
 <meta name="twitter:site" content="https://rainofsilence.github.io/" />
 <meta name="twitter:creator" content="" />
@@ -54,14 +54,14 @@
 />
 <meta
   property="og:title"
-  content="Goland Learn Notes(Variable) - Rainofsilence&#39;s site"
+  content="Goland Learn Notes(Constant) - Rainofsilence&#39;s site"
 />
 <meta
   property="og:description"
-  content="GoLang 学习笔记之变量"
+  content="GoLang 学习笔记之常量"
 />
-<meta property="og:url" content="https://rainofsilence.github.io/post/goland-learn-notesvariable/" />
-<meta property="og:site_name" content="Goland Learn Notes(Variable)" />
+<meta property="og:url" content="https://rainofsilence.github.io/post/goland-learn-notesconstant/" />
+<meta property="og:site_name" content="Goland Learn Notes(Constant)" />
 <meta
   property="og:image"
   content="https://rainofsilence.github.io/"
@@ -69,7 +69,7 @@
 <meta property="og:image:width" content="2048" />
 <meta property="og:image:height" content="1024" />
 
-<meta property="article:published_time" content="2022-09-06 23:17:24 &#43;0800 CST" />
+<meta property="article:published_time" content="2022-09-08 20:45:48 &#43;0800 CST" />
 
 
 
@@ -274,18 +274,18 @@
                   <span class="author">
                     <a href="https://rainofsilence.github.io/">rainofsilence</a></span><span
                     class="path-divider">/</span><strong class="css-truncate-target mr-1" style="max-width: 410px"><a
-                      href="https://rainofsilence.github.io/post/goland-learn-notesvariable/">Goland Learn Notes(Variable)</a></strong>
+                      href="https://rainofsilence.github.io/post/goland-learn-notesconstant/">Goland Learn Notes(Constant)</a></strong>
                 </h1>
                 <div class="note m-0">
-                  Created <relative-time datetime="Tue, 06 Sep 2022 23:17:24 &#43;0800"
+                  Created <relative-time datetime="Thu, 08 Sep 2022 20:45:48 &#43;0800"
                     class="no-wrap">
-                    Tue, 06 Sep 2022 23:17:24 &#43;0800</relative-time>
+                    Thu, 08 Sep 2022 20:45:48 &#43;0800</relative-time>
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Tue, 06 Sep 2022 23:48:54 &#43;0800"
+                  Modified <relative-time datetime="Thu, 08 Sep 2022 21:22:45 &#43;0800"
                     class="no-wrap">
-                    Tue, 06 Sep 2022 23:48:54 &#43;0800</relative-time>
+                    Thu, 08 Sep 2022 21:22:45 &#43;0800</relative-time>
                   
                 </div>
               </div>
@@ -315,7 +315,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      221 Words
+                      274 Words
                     <span class="file-info-divider"></span>
                                         1 min
 
@@ -339,43 +339,56 @@
 
 
               <div class="Box-body px-5 pb-5" style="z-index: 1">
-                <article class="markdown-body entry-content container-lg"><h3 id="1-声明变量">1. 声明变量</h3>
-<p>变量声明有以下三种形式:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-GoLang" data-lang="GoLang"><span class="line"><span class="cl"><span class="c1">// 第一种: 先定义变量 然后进行赋值
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">num1</span> <span class="kt">int</span>
-</span></span><span class="line"><span class="cl"><span class="nx">num1</span> <span class="p">=</span> <span class="mi">27</span>
-</span></span><span class="line"><span class="cl"><span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;num1 = %d\n&#34;</span><span class="p">,</span> <span class="nx">num1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="c1">// 也可以写在一行
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">num2</span> <span class="kt">int</span> <span class="p">=</span> <span class="mi">28</span>
-</span></span><span class="line"><span class="cl"><span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;num2 = %d\n&#34;</span><span class="p">,</span> <span class="nx">num2</span><span class="p">)</span>
+                <article class="markdown-body entry-content container-lg"><h2 id="常量的使用">常量的使用</h2>
+<h3 id="1-常量声明">1. 常量声明</h3>
+<p>常量是一个简单值的标识符 在程序运行时 不会被修改的量</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-GoLang" data-lang="GoLang"><span class="line"><span class="cl"><span class="kd">const</span> <span class="nx">identifier</span> <span class="p">[</span><span class="kd">type</span><span class="p">]</span> <span class="p">=</span> <span class="nx">value</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// 第二种: 类型推断
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">name1</span> <span class="p">=</span> <span class="s">&#34;sumin&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;name1 is %s\n&#34;</span><span class="p">,</span> <span class="nx">name1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 显式类型定义
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">const</span> <span class="nx">b</span> <span class="kt">string</span> <span class="p">=</span> <span class="s">&#34;abc&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 隐式类型定义
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">const</span> <span class="nx">b</span> <span class="p">=</span> <span class="s">&#34;abc&#34;</span>
+</span></span></code></pre></div><p>赋值方式有如下</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-GoLang" data-lang="GoLang"><span class="line"><span class="cl"><span class="c1">// 定义常量
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">const</span> <span class="nx">PATH</span> <span class="kt">string</span> <span class="p">=</span> <span class="s">&#34;https://www.bilibili.com&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">const</span> <span class="nx">PI</span> <span class="p">=</span> <span class="mf">3.14</span>
+</span></span><span class="line"><span class="cl"><span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">PATH</span><span class="p">,</span> <span class="nx">PI</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// 第三种: 简短声明
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">sum1</span> <span class="o">:=</span> <span class="mi">100</span>
-</span></span><span class="line"><span class="cl"><span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;sum1 = %d\n&#34;</span><span class="p">,</span> <span class="nx">sum1</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="2-多变量声明">2. 多变量声明</h3>
-<p>多变量声明方式有以下三种:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-GoLang" data-lang="GoLang"><span class="line"><span class="cl"><span class="c1">// 第一种: 以&#34;,&#34;分隔 声明与赋值分开 若不赋值 存在默认值
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span> <span class="kt">int</span>
-</span></span><span class="line"><span class="cl"><span class="nx">a</span> <span class="p">=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl"><span class="nx">b</span> <span class="p">=</span> <span class="mi">2</span>
-</span></span><span class="line"><span class="cl"><span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// 第二种: 直接赋值 可以是不同类型
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="nx">m</span><span class="p">,</span> <span class="nx">n</span><span class="p">,</span> <span class="nx">o</span> <span class="p">=</span> <span class="mi">100</span><span class="p">,</span> <span class="mf">100.2</span><span class="p">,</span> <span class="s">&#34;hello&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">m</span><span class="p">,</span> <span class="nx">n</span><span class="p">,</span> <span class="nx">o</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// 第三种: 集合类型
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span> <span class="p">(</span>
-</span></span><span class="line"><span class="cl"><span class="nx">username</span> <span class="p">=</span> <span class="s">&#34;sumin&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nx">age</span>      <span class="p">=</span> <span class="mi">17</span>
-</span></span><span class="line"><span class="cl"><span class="nx">sex</span>      <span class="p">=</span> <span class="s">&#34;woman&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 定义一组常量
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">const</span> <span class="nx">C1</span><span class="p">,</span> <span class="nx">C2</span><span class="p">,</span> <span class="nx">C3</span> <span class="p">=</span> <span class="mi">100</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">,</span> <span class="s">&#34;sumin&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="kd">const</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">MALE</span>   <span class="p">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">FEMALE</span> <span class="p">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">UNKNOW</span> <span class="p">=</span> <span class="mi">3</span>
 </span></span><span class="line"><span class="cl"><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;username = %s, age = %d, sex = %s\n&#34;</span><span class="p">,</span> <span class="nx">username</span><span class="p">,</span> <span class="nx">age</span><span class="p">,</span> <span class="nx">sex</span><span class="p">)</span>
-</span></span></code></pre></div></article>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 一组常量中 如果某个常量没有初始值 默认和上一行一致
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">const</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">a</span> <span class="kt">int</span> <span class="p">=</span> <span class="mi">7</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">b</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">c</span> <span class="kt">string</span> <span class="p">=</span> <span class="s">&#34;halo&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">)</span>
+</span></span></code></pre></div><p>枚举类型常量</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-GoLang" data-lang="GoLang"><span class="line"><span class="cl"><span class="kd">const</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">SPRING</span> <span class="p">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">SUMMER</span> <span class="p">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">AUTUMN</span> <span class="p">=</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">WINTER</span> <span class="p">=</span> <span class="mi">3</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span></code></pre></div><p>常量的注意事项:</p>
+<ul>
+<li>常量中的数据类型只可以是
+<ol>
+<li>布尔型</li>
+<li>数字型(整数型 浮点型 复数)</li>
+<li>字符串型</li>
+</ol>
+</li>
+<li>不曾使用的常量 <strong>在编译时不会报错</strong></li>
+<li>显示指定类型的时候 必须确保常量左右值类型一致 需要时可以显示转换类型(变量可以是不同类型值)</li>
+</ul>
+</article>
               </div>
 
               
@@ -387,13 +400,11 @@
       <div class="pagination-nav">
         <div class="pagination-button next-post">
           
-          <div>«&nbsp;</div><a class="pagination-link link-reverse" href="https://rainofsilence.github.io/post/goland-learn-notesconstant/"> Goland Learn Notes(Constant)</a>
-          
         </div>
         
         <div class="pagination-button previous-post">
           
-          <a class="pagination-link link-reverse" href="https://rainofsilence.github.io/post/golang-learn-notesunc/">Golang Learn Notes(UNC)&nbsp;</a><div> »</div>
+          <a class="pagination-link link-reverse" href="https://rainofsilence.github.io/post/goland-learn-notesvariable/">Goland Learn Notes(Variable)&nbsp;</a><div> »</div>
           
         </div>
       </div>
