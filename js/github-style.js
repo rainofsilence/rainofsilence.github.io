@@ -30,6 +30,7 @@ const now = new Date();
 let contributions;
 
 (() => {
+  reducePostIfMobile();
   setRelativeTime();
   showGithubFollowers();
   const dom = document.querySelector("#contributions");
@@ -52,21 +53,40 @@ let contributions;
   switchYear(year.toString());
 })();
 
-function switchYear(year) {
-  let startDate;
-  let endDate;
-  if (year !== now.getFullYear().toString()) {
-    const date = new Date(Number(year), 0, 1, 0, 0, 0, 0);
-    startDate = new Date(date.getFullYear(), 0, 1);
-    endDate = new Date(date.getFullYear(), 11, 31);
-  } else {
-    endDate = now;
-    startDate = new Date(
-      endDate.getTime() -
-        364 * 24 * 60 * 60 * 1000 -
-        endDate.getDay() * 24 * 60 * 60 * 1000
-    );
+function isMobile() {
+  return window.matchMedia("(pointer:coarse)").matches;
+}
+
+function reducePostIfMobile() {
+  const _isMobile = isMobile();
+  if (_isMobile) {
+    const pinned = document.querySelector('.js-pinned-items-reorder-list');
+    if (pinned) {
+      const list = pinned.querySelectorAll('.flex-content-stretch');
+      if (list.length > 2) {
+        for (let i = list.length - 1; i >= 2; i--) {
+          pinned.removeChild(list[i]);
+        }
+      }
+    }
+
+    const recent = document.querySelector('.js-recent-items-reorder-list');
+    if (recent) {
+      const list = recent.querySelectorAll('.flex-content-stretch');
+      if (list.length > 2) {
+        for (let i = list.length - 1; i >= 2; i--) {
+          recent.removeChild(list[i]);
+        }
+      }
+    }
   }
+}
+
+
+function switchYear(year) {
+  const date = new Date(Number(year), 0, 1, 0, 0, 0, 0);
+  const startDate = new Date(date.getFullYear(), 0, 1);
+  const endDate = new Date(date.getFullYear(), 11, 31);
   startDate.setHours(0, 0, 0, 0);
   endDate.setHours(23, 59, 59, 999);
   const posts = [];
@@ -86,12 +106,49 @@ function switchYear(year) {
   posts.sort((a, b) => {
     return b - a;
   });
-  document.querySelector("#posts-activity").innerHTML = "";
-  for (const time of ms) {
+
+  const postActivityDom = document.querySelector("#posts-activity");
+  postActivityDom.innerHTML = "";
+
+  for (let i = 0; i < ms.length && i < 2; i++) {
+    const time = ms[i];
     const node = document.createElement("div");
     const array = time.split("-");
     node.innerHTML = monthly(array[0], Number(array[1]), posts);
-    document.querySelector("#posts-activity").appendChild(node);
+    postActivityDom.appendChild(node);
+  }
+
+  const restOfContributions = ms.slice(2);
+
+  let showMoreButton = document.getElementById("contribution-show-more-button");
+  if (restOfContributions.length > 0) {
+    if (!showMoreButton) {
+      showMoreButton = document.createElement("button");
+      showMoreButton.setAttribute("id", "contribution-show-more-button");
+      showMoreButton.setAttribute("name", "button");
+      showMoreButton.classList.add(
+        "ajax-pagination-btn",
+        "btn",
+        "btn-outline",
+        "f6",
+        "mt-0",
+        "py-2",
+        "contribution-activity-show-more",
+        "col-12",
+        "col-lg-10",
+        "bold"
+      );
+      showMoreButton.innerText = "Show more activity";
+      showMoreButton.onclick = showMore;
+    }
+    showMoreButton.style.fontWeight = 600;
+    showMoreButton.setAttribute("data-current-year", year);
+    showMoreButton.setAttribute("data-rest-contributions", restOfContributions);
+    document.querySelector("#posts-activity-block").appendChild(showMoreButton);
+  } else {
+    if (showMoreButton) {
+      showMoreButton.remove();
+    }
   }
 
   graph(year, posts, startDate, endDate);
@@ -104,6 +161,61 @@ function switchYear(year) {
       elem.classList.remove("selected");
     }
   }
+}
+
+function showMore() {
+  const showMoreButton = document.getElementById(
+    "contribution-show-more-button"
+  );
+  if (!showMoreButton) {
+    return;
+  }
+
+  const currentYear = showMoreButton.getAttribute("data-current-year");
+  const _restOfContributions = showMoreButton.getAttribute(
+    "data-rest-contributions"
+  );
+
+  if (!currentYear || !_restOfContributions) {
+    return;
+  }
+
+  let restOfContributions = _restOfContributions.split(",");
+  const date = new Date(Number(currentYear), 0, 1, 0, 0, 0, 0);
+  const startDate = new Date(date.getFullYear(), 0, 1);
+  const endDate = new Date(date.getFullYear(), 11, 31);
+  startDate.setHours(0, 0, 0, 0);
+  endDate.setHours(23, 59, 59, 999);
+  const posts = [];
+  const ms = [];
+  for (const item of contributions) {
+    if (item.date >= startDate && item.date <= endDate) {
+      posts.push(item);
+      const time =
+        item.date.getFullYear().toString() +
+        "-" +
+        item.date.getMonth().toString();
+      if (!ms.includes(time)) {
+        ms.push(time);
+      }
+    }
+  }
+  
+  posts.sort((a, b) => {
+    return b - a;
+  });
+  
+  const postActivityDom = document.querySelector("#posts-activity");
+  const node = document.createElement("div");
+  const array = restOfContributions[0].split("-");
+  node.innerHTML = monthly(array[0], Number(array[1]), posts);
+  postActivityDom.appendChild(node);
+
+  restOfContributions = restOfContributions.slice(1);
+  if (restOfContributions.length <= 0) {
+    showMoreButton.remove();
+  }
+  showMoreButton.setAttribute("data-rest-contributions", restOfContributions);
 }
 
 function monthly(year, month, posts) {
@@ -332,6 +444,11 @@ function showThisDay(day) {
     posts
   );
   document.querySelector("#posts-activity").appendChild(node);
+
+  const showMoreButton = document.getElementById('contribution-show-more-button');
+  if (showMoreButton) {
+    showMoreButton.remove();
+  }  
 }
 
 function showGithubFollowers() {
