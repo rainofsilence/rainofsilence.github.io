@@ -8,20 +8,20 @@
     <language>zh-cn</language>
     <lastBuildDate>Thu, 08 Sep 2022 20:45:48 +0800</lastBuildDate><atom:link href="https://rainofsilence.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Goland Learn Notes(Constant)</title>
-      <link>https://rainofsilence.github.io/post/goland-learn-notesconstant/</link>
+      <title>Golang Learn Notes(Constant)</title>
+      <link>https://rainofsilence.github.io/post/golang-learn-notesconstant/</link>
       <pubDate>Thu, 08 Sep 2022 20:45:48 +0800</pubDate>
       
-      <guid>https://rainofsilence.github.io/post/goland-learn-notesconstant/</guid>
+      <guid>https://rainofsilence.github.io/post/golang-learn-notesconstant/</guid>
       <description>GoLang 学习笔记之常量</description>
     </item>
     
     <item>
-      <title>Goland Learn Notes(Variable)</title>
-      <link>https://rainofsilence.github.io/post/goland-learn-notesvariable/</link>
+      <title>Golang Learn Notes(Variable)</title>
+      <link>https://rainofsilence.github.io/post/golang-learn-notesvariable/</link>
       <pubDate>Tue, 06 Sep 2022 23:17:24 +0800</pubDate>
       
-      <guid>https://rainofsilence.github.io/post/goland-learn-notesvariable/</guid>
+      <guid>https://rainofsilence.github.io/post/golang-learn-notesvariable/</guid>
       <description>GoLang 学习笔记之变量</description>
     </item>
     
