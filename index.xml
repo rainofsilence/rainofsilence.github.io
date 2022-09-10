@@ -2,107 +2,107 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rainofsilence&#39;s site</title>
-    <link>https://rainofsilence.github.io/</link>
+    <link>https://rainofsilence.icu/</link>
     <description>Recent content on Rainofsilence&#39;s site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 10 Sep 2022 18:11:00 +0800</lastBuildDate><atom:link href="https://rainofsilence.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Sep 2022 18:11:00 +0800</lastBuildDate><atom:link href="https://rainofsilence.icu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Golang Learn Notes(DataType)</title>
-      <link>https://rainofsilence.github.io/post/golang-learn-notesdatatype/</link>
+      <link>https://rainofsilence.icu/post/golang-learn-notesdatatype/</link>
       <pubDate>Sat, 10 Sep 2022 18:11:00 +0800</pubDate>
       
-      <guid>https://rainofsilence.github.io/post/golang-learn-notesdatatype/</guid>
+      <guid>https://rainofsilence.icu/post/golang-learn-notesdatatype/</guid>
       <description>GoLang 学习笔记之数据类型</description>
     </item>
     
     <item>
       <title>Golang Learn Notes(Constant)</title>
-      <link>https://rainofsilence.github.io/post/golang-learn-notesconstant/</link>
+      <link>https://rainofsilence.icu/post/golang-learn-notesconstant/</link>
       <pubDate>Thu, 08 Sep 2022 20:45:48 +0800</pubDate>
       
-      <guid>https://rainofsilence.github.io/post/golang-learn-notesconstant/</guid>
+      <guid>https://rainofsilence.icu/post/golang-learn-notesconstant/</guid>
       <description>GoLang 学习笔记之常量</description>
     </item>
     
     <item>
       <title>Golang Learn Notes(Variable)</title>
-      <link>https://rainofsilence.github.io/post/golang-learn-notesvariable/</link>
+      <link>https://rainofsilence.icu/post/golang-learn-notesvariable/</link>
       <pubDate>Tue, 06 Sep 2022 23:17:24 +0800</pubDate>
       
-      <guid>https://rainofsilence.github.io/post/golang-learn-notesvariable/</guid>
+      <guid>https://rainofsilence.icu/post/golang-learn-notesvariable/</guid>
       <description>GoLang 学习笔记之变量</description>
     </item>
     
     <item>
       <title>Golang Learn Notes(UNC)</title>
-      <link>https://rainofsilence.github.io/post/golang-learn-notesunc/</link>
+      <link>https://rainofsilence.icu/post/golang-learn-notesunc/</link>
       <pubDate>Sun, 04 Sep 2022 14:41:57 +0800</pubDate>
       
-      <guid>https://rainofsilence.github.io/post/golang-learn-notesunc/</guid>
+      <guid>https://rainofsilence.icu/post/golang-learn-notesunc/</guid>
       <description>GoLang 学习笔记之命名规范</description>
     </item>
     
     <item>
       <title>Set Up Golang for Mac</title>
-      <link>https://rainofsilence.github.io/post/set-up-golang-for-mac/</link>
+      <link>https://rainofsilence.icu/post/set-up-golang-for-mac/</link>
       <pubDate>Wed, 31 Aug 2022 18:55:32 +0800</pubDate>
       
-      <guid>https://rainofsilence.github.io/post/set-up-golang-for-mac/</guid>
+      <guid>https://rainofsilence.icu/post/set-up-golang-for-mac/</guid>
       <description>macOS 搭建 GoLang 环境</description>
     </item>
     
     <item>
       <title>MacOS Reset Privacy Authorization</title>
-      <link>https://rainofsilence.github.io/post/macos-reset-privacy-authorization/</link>
+      <link>https://rainofsilence.icu/post/macos-reset-privacy-authorization/</link>
       <pubDate>Mon, 22 Aug 2022 18:43:15 +0800</pubDate>
       
-      <guid>https://rainofsilence.github.io/post/macos-reset-privacy-authorization/</guid>
+      <guid>https://rainofsilence.icu/post/macos-reset-privacy-authorization/</guid>
       <description>通过命令重置macOS隐私授权设置</description>
     </item>
     
     <item>
       <title>Idea Keymap Introduce Mac</title>
-      <link>https://rainofsilence.github.io/post/idea-keymap-introduce-mac/</link>
+      <link>https://rainofsilence.icu/post/idea-keymap-introduce-mac/</link>
       <pubDate>Wed, 17 Aug 2022 23:47:14 +0800</pubDate>
       
-      <guid>https://rainofsilence.github.io/post/idea-keymap-introduce-mac/</guid>
+      <guid>https://rainofsilence.icu/post/idea-keymap-introduce-mac/</guid>
       <description>idea快捷键大全（mac）</description>
     </item>
     
     <item>
       <title>Idea Keymap Introduce</title>
-      <link>https://rainofsilence.github.io/post/idea-keymap-introduce/</link>
+      <link>https://rainofsilence.icu/post/idea-keymap-introduce/</link>
       <pubDate>Wed, 17 Aug 2022 23:44:20 +0800</pubDate>
       
-      <guid>https://rainofsilence.github.io/post/idea-keymap-introduce/</guid>
+      <guid>https://rainofsilence.icu/post/idea-keymap-introduce/</guid>
       <description>idea快捷键大全（win）</description>
     </item>
     
     <item>
       <title>Hugo &#43; Github Pages To Build Site</title>
-      <link>https://rainofsilence.github.io/post/hugo-and-github-pages-to-build-site/</link>
+      <link>https://rainofsilence.icu/post/hugo-and-github-pages-to-build-site/</link>
       <pubDate>Sat, 13 Aug 2022 19:57:57 +0800</pubDate>
       
-      <guid>https://rainofsilence.github.io/post/hugo-and-github-pages-to-build-site/</guid>
+      <guid>https://rainofsilence.icu/post/hugo-and-github-pages-to-build-site/</guid>
       <description>Hugo + Github Pages 搭建个人博客（基础版）</description>
     </item>
     
     <item>
       <title>Readme</title>
-      <link>https://rainofsilence.github.io/readme/</link>
+      <link>https://rainofsilence.icu/readme/</link>
       <pubDate>Fri, 12 Aug 2022 17:19:22 +0800</pubDate>
       
-      <guid>https://rainofsilence.github.io/readme/</guid>
+      <guid>https://rainofsilence.icu/readme/</guid>
       <description>👋 Hi, I’m @rainofsilence.</description>
     </item>
     
     <item>
       <title>Start</title>
-      <link>https://rainofsilence.github.io/post/start/</link>
+      <link>https://rainofsilence.icu/post/start/</link>
       <pubDate>Fri, 12 Aug 2022 17:17:30 +0800</pubDate>
       
-      <guid>https://rainofsilence.github.io/post/start/</guid>
+      <guid>https://rainofsilence.icu/post/start/</guid>
       <description>Hello, this is my first post!</description>
     </item>
     
