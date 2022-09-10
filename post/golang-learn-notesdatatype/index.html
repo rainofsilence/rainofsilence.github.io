@@ -15,7 +15,7 @@
   <link rel="stylesheet" href='https://rainofsilence.github.io/css/syntax.css' />
   
   <title>
-    Golang Learn Notes(Constant) | Rainofsilence&#39;s site
+    Golang Learn Notes(DataType) | Rainofsilence&#39;s site
   </title>
   
   <link rel="icon" type="image/x-icon" href="/images/github.png" />
@@ -25,20 +25,20 @@
   
   <meta
   name="description"
-  content="GoLang 学习笔记之常量"
+  content="GoLang 学习笔记之数据类型"
 />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="https://rainofsilence.github.io/post/golang-learn-notesconstant/" />
+<link rel="canonical" href="https://rainofsilence.github.io/post/golang-learn-notesdatatype/" />
 
 
 <meta name="twitter:card" content="summary" />
 <meta
   name="twitter:title"
-  content="Golang Learn Notes(Constant) - Rainofsilence&#39;s site"
+  content="Golang Learn Notes(DataType) - Rainofsilence&#39;s site"
 />
 <meta
   name="twitter:description"
-  content="GoLang 学习笔记之常量"
+  content="GoLang 学习笔记之数据类型"
 />
 <meta name="twitter:site" content="https://rainofsilence.github.io/" />
 <meta name="twitter:creator" content="" />
@@ -54,14 +54,14 @@
 />
 <meta
   property="og:title"
-  content="Golang Learn Notes(Constant) - Rainofsilence&#39;s site"
+  content="Golang Learn Notes(DataType) - Rainofsilence&#39;s site"
 />
 <meta
   property="og:description"
-  content="GoLang 学习笔记之常量"
+  content="GoLang 学习笔记之数据类型"
 />
-<meta property="og:url" content="https://rainofsilence.github.io/post/golang-learn-notesconstant/" />
-<meta property="og:site_name" content="Golang Learn Notes(Constant)" />
+<meta property="og:url" content="https://rainofsilence.github.io/post/golang-learn-notesdatatype/" />
+<meta property="og:site_name" content="Golang Learn Notes(DataType)" />
 <meta
   property="og:image"
   content="https://rainofsilence.github.io/"
@@ -69,7 +69,7 @@
 <meta property="og:image:width" content="2048" />
 <meta property="og:image:height" content="1024" />
 
-<meta property="article:published_time" content="2022-09-08 20:45:48 &#43;0800 CST" />
+<meta property="article:published_time" content="2022-09-10 18:11:00 &#43;0800 CST" />
 
 
 
@@ -274,18 +274,18 @@
                   <span class="author">
                     <a href="https://rainofsilence.github.io/">rainofsilence</a></span><span
                     class="path-divider">/</span><strong class="css-truncate-target mr-1" style="max-width: 410px"><a
-                      href="https://rainofsilence.github.io/post/golang-learn-notesconstant/">Golang Learn Notes(Constant)</a></strong>
+                      href="https://rainofsilence.github.io/post/golang-learn-notesdatatype/">Golang Learn Notes(DataType)</a></strong>
                 </h1>
                 <div class="note m-0">
-                  Created <relative-time datetime="Thu, 08 Sep 2022 20:45:48 &#43;0800"
+                  Created <relative-time datetime="Sat, 10 Sep 2022 18:11:00 &#43;0800"
                     class="no-wrap">
-                    Thu, 08 Sep 2022 20:45:48 &#43;0800</relative-time>
+                    Sat, 10 Sep 2022 18:11:00 &#43;0800</relative-time>
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Fri, 09 Sep 2022 10:34:46 &#43;0800"
+                  Modified <relative-time datetime="Sat, 10 Sep 2022 18:36:01 &#43;0800"
                     class="no-wrap">
-                    Fri, 09 Sep 2022 10:34:46 &#43;0800</relative-time>
+                    Sat, 10 Sep 2022 18:36:01 &#43;0800</relative-time>
                   
                 </div>
               </div>
@@ -315,9 +315,9 @@
                         </div>
                       </div>
                     </details-menu>
-                      461 Words
+                      68 Words
                     <span class="file-info-divider"></span>
-                                        2 min
+                                        0 min
 
                   </div>
                   <div class="file-actions flex-order-2 pt-0">
@@ -339,83 +339,27 @@
 
 
               <div class="Box-body px-5 pb-5" style="z-index: 1">
-                <article class="markdown-body entry-content container-lg"><h2 id="常量的使用">常量的使用</h2>
-<h3 id="1-常量声明">1. 常量声明</h3>
-<p>常量是一个简单值的标识符 在程序运行时 不会被修改的量</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-GoLang" data-lang="GoLang"><span class="line"><span class="cl"><span class="kd">const</span> <span class="nx">identifier</span> <span class="p">[</span><span class="kd">type</span><span class="p">]</span> <span class="p">=</span> <span class="nx">value</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// 显式类型定义
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">const</span> <span class="nx">b</span> <span class="kt">string</span> <span class="p">=</span> <span class="s">&#34;abc&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="c1">// 隐式类型定义
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">const</span> <span class="nx">b</span> <span class="p">=</span> <span class="s">&#34;abc&#34;</span>
-</span></span></code></pre></div><p>赋值方式有如下</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-GoLang" data-lang="GoLang"><span class="line"><span class="cl"><span class="c1">// 定义常量
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">const</span> <span class="nx">PATH</span> <span class="kt">string</span> <span class="p">=</span> <span class="s">&#34;https://www.bilibili.com&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="kd">const</span> <span class="nx">PI</span> <span class="p">=</span> <span class="mf">3.14</span>
-</span></span><span class="line"><span class="cl"><span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">PATH</span><span class="p">,</span> <span class="nx">PI</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// 定义一组常量
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">const</span> <span class="nx">C1</span><span class="p">,</span> <span class="nx">C2</span><span class="p">,</span> <span class="nx">C3</span> <span class="p">=</span> <span class="mi">100</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">,</span> <span class="s">&#34;sumin&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="kd">const</span> <span class="p">(</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">MALE</span>   <span class="p">=</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">FEMALE</span> <span class="p">=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">UNKNOW</span> <span class="p">=</span> <span class="mi">3</span>
-</span></span><span class="line"><span class="cl"><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// 一组常量中 如果某个常量没有初始值 默认和上一行一致
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">const</span> <span class="p">(</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">a</span> <span class="kt">int</span> <span class="p">=</span> <span class="mi">7</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">b</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">c</span> <span class="kt">string</span> <span class="p">=</span> <span class="s">&#34;halo&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">)</span>
-</span></span></code></pre></div><p>枚举类型常量</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-GoLang" data-lang="GoLang"><span class="line"><span class="cl"><span class="kd">const</span> <span class="p">(</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">SPRING</span> <span class="p">=</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">SUMMER</span> <span class="p">=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">AUTUMN</span> <span class="p">=</span> <span class="mi">2</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">WINTER</span> <span class="p">=</span> <span class="mi">3</span>
-</span></span><span class="line"><span class="cl"><span class="p">)</span>
-</span></span></code></pre></div><p>常量的注意事项:</p>
+                <article class="markdown-body entry-content container-lg"><h2 id="基础数据类型">基础数据类型</h2>
+<p>以下是go中可用的基本数据类型</p>
 <ul>
-<li>常量中的数据类型只可以是
-<ol>
-<li>布尔型</li>
-<li>数字型(整数型 浮点型 复数)</li>
-<li>字符串型</li>
-</ol>
-</li>
-<li>不曾使用的常量 <strong>在编译时不会报错</strong></li>
-<li>显示指定类型的时候 必须确保常量左右值类型一致 需要时可以显示转换类型(变量可以是不同类型值)</li>
+<li>bool</li>
+<li>Numeric Types
+<ul>
+<li>int8, int16, int32, int64, int</li>
+<li>uint8, uint16, uint32, uint64, uint</li>
+<li>float32, float64</li>
+<li>complex64, complex128</li>
+<li>byte</li>
+<li>rune</li>
 </ul>
-<h3 id="2-iota">2. <code>iota</code></h3>
-<p><code>iota</code> 特殊常量 可以认为是一个可以被编译器修改的常量</p>
-<p><code>iota</code>在<code>const</code>关键字出现时将被重置为0 <code>const</code>中每新增一行常量声明将时<code>iota</code>计数一次(<code>iota</code>可理解为<code>const</code>语句块中的行索引)</p>
-<p><code>iota</code>可以用作枚举值</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-GoLang" data-lang="GoLang"><span class="line"><span class="cl"><span class="kd">const</span> <span class="p">(</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">a</span> <span class="p">=</span> <span class="kc">iota</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">b</span> <span class="p">=</span> <span class="kc">iota</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">c</span> <span class="p">=</span> <span class="kc">iota</span>
-</span></span><span class="line"><span class="cl"><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="c1">// 简写形式
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">const</span> <span class="p">(</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">a</span> <span class="p">=</span> <span class="kc">iota</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">b</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">c</span>
-</span></span><span class="line"><span class="cl"><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="c1">// 索引
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">const</span> <span class="p">(</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">a</span> <span class="p">=</span> <span class="kc">iota</span>   <span class="c1">//0
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">b</span>          <span class="c1">//1
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">c</span>          <span class="c1">//2
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">d</span> <span class="p">=</span> <span class="s">&#34;ha&#34;</span>   <span class="c1">//独立值，iota += 1
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">e</span>          <span class="c1">//&#34;ha&#34;   iota += 1
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">f</span> <span class="p">=</span> <span class="mi">100</span>    <span class="c1">//iota +=1
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">g</span>          <span class="c1">//100  iota +=1
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">h</span> <span class="p">=</span> <span class="kc">iota</span>   <span class="c1">//7,恢复计数
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">i</span>          <span class="c1">//8
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">)</span>
-</span></span></code></pre></div></article>
+</li>
+<li>string</li>
+</ul>
+<h3 id="1-布尔型bool">1. 布尔型bool</h3>
+<h3 id="2-数值型">2. 数值型</h3>
+<h3 id="3-字符串型">3. 字符串型</h3>
+<h2 id="复合类型派生类型">复合类型(派生类型)</h2>
+</article>
               </div>
 
               
@@ -427,13 +371,11 @@
       <div class="pagination-nav">
         <div class="pagination-button next-post">
           
-          <div>«&nbsp;</div><a class="pagination-link link-reverse" href="https://rainofsilence.github.io/post/golang-learn-notesdatatype/"> Golang Learn Notes(DataType)</a>
-          
         </div>
         
         <div class="pagination-button previous-post">
           
-          <a class="pagination-link link-reverse" href="https://rainofsilence.github.io/post/golang-learn-notesvariable/">Golang Learn Notes(Variable)&nbsp;</a><div> »</div>
+          <a class="pagination-link link-reverse" href="https://rainofsilence.github.io/post/golang-learn-notesconstant/">Golang Learn Notes(Constant)&nbsp;</a><div> »</div>
           
         </div>
       </div>
