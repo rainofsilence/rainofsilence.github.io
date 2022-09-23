@@ -2,62 +2,68 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://rainofsilence.icu/tags/golang/</loc>
-    <lastmod>2022-09-13T20:59:17+08:00</lastmod>
-  </url><url>
-    <loc>https://rainofsilence.icu/post/golang-learn-notesdatatype/</loc>
-    <lastmod>2022-09-13T20:59:17+08:00</lastmod>
-  </url><url>
     <loc>https://rainofsilence.icu/post/</loc>
-    <lastmod>2022-09-16T10:30:34+08:00</lastmod>
+    <lastmod>2022-09-23T09:49:18+08:00</lastmod>
   </url><url>
     <loc>https://rainofsilence.icu/</loc>
-    <lastmod>2022-09-16T10:30:34+08:00</lastmod>
+    <lastmod>2022-09-23T09:49:18+08:00</lastmod>
+  </url><url>
+    <loc>https://rainofsilence.icu/tags/regular/</loc>
+    <lastmod>2022-09-23T09:49:18+08:00</lastmod>
+  </url><url>
+    <loc>https://rainofsilence.icu/post/regular-expression-doc/</loc>
+    <lastmod>2022-09-23T09:49:18+08:00</lastmod>
   </url><url>
     <loc>https://rainofsilence.icu/tags/</loc>
-    <lastmod>2022-09-16T10:30:34+08:00</lastmod>
+    <lastmod>2022-09-23T09:49:18+08:00</lastmod>
+  </url><url>
+    <loc>https://rainofsilence.icu/tags/golang/</loc>
+    <lastmod>2022-09-23T09:49:18+08:00</lastmod>
+  </url><url>
+    <loc>https://rainofsilence.icu/post/golang-learn-notesdatatype/</loc>
+    <lastmod>2022-09-23T09:49:18+08:00</lastmod>
   </url><url>
     <loc>https://rainofsilence.icu/post/golang-learn-notesconstant/</loc>
-    <lastmod>2022-09-09T10:34:46+08:00</lastmod>
+    <lastmod>2022-09-23T09:49:18+08:00</lastmod>
   </url><url>
     <loc>https://rainofsilence.icu/post/golang-learn-notesvariable/</loc>
-    <lastmod>2022-09-09T10:34:55+08:00</lastmod>
+    <lastmod>2022-09-23T09:49:18+08:00</lastmod>
   </url><url>
     <loc>https://rainofsilence.icu/post/golang-learn-notesunc/</loc>
-    <lastmod>2022-09-06T16:55:47+08:00</lastmod>
+    <lastmod>2022-09-23T09:49:18+08:00</lastmod>
   </url><url>
     <loc>https://rainofsilence.icu/post/set-up-golang-for-mac/</loc>
-    <lastmod>2022-09-04T14:43:21+08:00</lastmod>
+    <lastmod>2022-09-23T09:49:18+08:00</lastmod>
   </url><url>
     <loc>https://rainofsilence.icu/tags/macos/</loc>
-    <lastmod>2022-09-16T10:30:34+08:00</lastmod>
+    <lastmod>2022-09-23T09:49:18+08:00</lastmod>
   </url><url>
     <loc>https://rainofsilence.icu/post/macos-reset-privacy-authorization/</loc>
-    <lastmod>2022-09-16T10:30:34+08:00</lastmod>
+    <lastmod>2022-09-23T09:49:18+08:00</lastmod>
   </url><url>
     <loc>https://rainofsilence.icu/tags/idea/</loc>
-    <lastmod>2022-09-09T10:30:08+08:00</lastmod>
+    <lastmod>2022-09-23T09:49:18+08:00</lastmod>
   </url><url>
     <loc>https://rainofsilence.icu/post/idea-keymap-introduce-mac/</loc>
-    <lastmod>2022-09-09T10:30:08+08:00</lastmod>
+    <lastmod>2022-09-23T09:49:18+08:00</lastmod>
   </url><url>
     <loc>https://rainofsilence.icu/post/idea-keymap-introduce/</loc>
-    <lastmod>2022-09-09T10:29:58+08:00</lastmod>
+    <lastmod>2022-09-23T09:49:18+08:00</lastmod>
   </url><url>
     <loc>https://rainofsilence.icu/tags/blog/</loc>
-    <lastmod>2022-09-02T09:40:41+08:00</lastmod>
+    <lastmod>2022-09-23T09:49:18+08:00</lastmod>
   </url><url>
     <loc>https://rainofsilence.icu/tags/hugo/</loc>
-    <lastmod>2022-09-02T09:40:41+08:00</lastmod>
+    <lastmod>2022-09-23T09:49:18+08:00</lastmod>
   </url><url>
     <loc>https://rainofsilence.icu/post/hugo-and-github-pages-to-build-site/</loc>
-    <lastmod>2022-09-02T09:40:41+08:00</lastmod>
+    <lastmod>2022-09-23T09:49:18+08:00</lastmod>
   </url><url>
     <loc>https://rainofsilence.icu/readme/</loc>
-    <lastmod>2022-09-09T10:29:31+08:00</lastmod>
+    <lastmod>2022-09-23T09:49:18+08:00</lastmod>
   </url><url>
     <loc>https://rainofsilence.icu/post/start/</loc>
-    <lastmod>2022-09-10T20:10:39+08:00</lastmod>
+    <lastmod>2022-09-23T09:49:18+08:00</lastmod>
   </url><url>
     <loc>https://rainofsilence.icu/categories/</loc>
   </url>
