@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on Rainofsilence&#39;s site</title>
+    <link>https://rainofsilence.icu/tags/git/</link>
+    <description>Recent content in Git on Rainofsilence&#39;s site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 23 Sep 2022 10:09:18 +0800</lastBuildDate><atom:link href="https://rainofsilence.icu/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Command Doc</title>
+      <link>https://rainofsilence.icu/post/git-command-doc/</link>
+      <pubDate>Fri, 23 Sep 2022 10:09:18 +0800</pubDate>
+      
+      <guid>https://rainofsilence.icu/post/git-command-doc/</guid>
+      <description>Git命令文档</description>
+    </item>
+    
+  </channel>
+</rss>
