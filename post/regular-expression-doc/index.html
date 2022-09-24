@@ -283,9 +283,9 @@
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Fri, 23 Sep 2022 09:49:18 &#43;0800"
+                  Modified <relative-time datetime="Sat, 24 Sep 2022 16:04:17 &#43;0800"
                     class="no-wrap">
-                    Fri, 23 Sep 2022 09:49:18 &#43;0800</relative-time>
+                    Sat, 24 Sep 2022 16:04:17 &#43;0800</relative-time>
                   
                 </div>
               </div>
@@ -315,9 +315,9 @@
                         </div>
                       </div>
                     </details-menu>
-                      41 Words
+                      739 Words
                     <span class="file-info-divider"></span>
-                                        0 min
+                                        3 min
 
                   </div>
                   <div class="file-actions flex-order-2 pt-0">
@@ -345,6 +345,195 @@
 <li><a href="https://c.runoob.com/front-end/854/">正则表达式在线测试</a></li>
 </ul>
 <h2 id="语法">语法</h2>
+<ul>
+<li><code>+</code>代表前面的字符必须至少出现一次(1,n)
+<ul>
+<li>e.g. <code>so+min</code>可以匹配<code>somin soomin sooomin</code>等</li>
+</ul>
+</li>
+<li><code>*</code>代表前面的符号可以不出现(0,n)
+<ul>
+<li>e.g. <code>somi*n</code>可以匹配<code>somn somin somiin</code>等</li>
+</ul>
+</li>
+<li><code>?</code>代表前面的符号最多只可以出现一次(0,1)
+<ul>
+<li>e.g. <code>somi?n</code>可以匹配<code>somn</code>或者<code>somin</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="普通字符">普通字符</h3>
+<table>
+<thead>
+<tr>
+<th>字符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[ABC]｜匹配[&hellip;]中的所有字符</td>
+<td></td>
+</tr>
+<tr>
+<td>[^ABC]｜匹配除了[&hellip;]中字符的所有字符</td>
+<td></td>
+</tr>
+<tr>
+<td>[A-Z]</td>
+<td>表示一个区间 匹配所有大写字母</td>
+</tr>
+<tr>
+<td><strong>.</strong></td>
+<td>匹配出换行符(\n \r)之外的任何单个字符 相等于[^\n\r]</td>
+</tr>
+<tr>
+<td>[\s\S]</td>
+<td>匹配所有 \s是匹配所有空白符 \S非空白符</td>
+</tr>
+<tr>
+<td>\w</td>
+<td>匹配字母、数字、下划线 等价于[A-Za-z0-9_]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="非打印字符">非打印字符</h3>
+<table>
+<thead>
+<tr>
+<th>字符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\cx</td>
+<td>匹配由x指明的控制符</td>
+</tr>
+<tr>
+<td>\f</td>
+<td>匹配一个换页符 等价于<code>\x0c</code>or<code>\cL</code></td>
+</tr>
+<tr>
+<td>\n</td>
+<td>匹配一个换行符 等价于<code>\x0a</code>or<code>\cJ</code></td>
+</tr>
+<tr>
+<td>\r</td>
+<td>匹配一个回车符 等价于<code>\x0d</code> or<code>\cM</code></td>
+</tr>
+<tr>
+<td>\s</td>
+<td>匹配任何空白字符</td>
+</tr>
+<tr>
+<td>\S</td>
+<td>匹配任何非空白字符 等价于 [^\f\n\r\t\v]</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>匹配一个制表符 等价于<code>\x09</code>or<code>\cl</code></td>
+</tr>
+<tr>
+<td>\v</td>
+<td>匹配一个垂直制表符 等价于<code>\x0b</code>or<code>\cK</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="特殊字符">特殊字符</h3>
+<table>
+<thead>
+<tr>
+<th>特别字符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$</td>
+<td>匹配输入字符串的结尾位置</td>
+</tr>
+<tr>
+<td>()</td>
+<td>标记一个子表达式的开始和结束位置</td>
+</tr>
+<tr>
+<td>*</td>
+<td>匹配前面的子表达式0或n次</td>
+</tr>
+<tr>
+<td>+</td>
+<td>匹配前面子表达式1或n次</td>
+</tr>
+<tr>
+<td>.</td>
+<td>匹配除换行符号之外的任何单字符</td>
+</tr>
+<tr>
+<td>[</td>
+<td>标记一个中括号表达式的开始</td>
+</tr>
+<tr>
+<td>?</td>
+<td>匹配前面的子表达式0或1次</td>
+</tr>
+<tr>
+<td>\</td>
+<td>将下一个字符标记为或特殊字符、或原义字符、或向后引用、或八进制转义符</td>
+</tr>
+<tr>
+<td>^</td>
+<td>匹配输入字符串的开始位置</td>
+</tr>
+<tr>
+<td>{</td>
+<td>标记限定符表达式的开始</td>
+</tr>
+<tr>
+<td>&ldquo;｜&rdquo;</td>
+<td>指明两项之间的一个选择</td>
+</tr>
+</tbody>
+</table>
+<h3 id="限定符">限定符</h3>
+<p>限定符用来表示正则表达式的一个给定组件必须要出现多少次才能满足匹配</p>
+<table>
+<thead>
+<tr>
+<th>字符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>*</td>
+<td>[0,∞)</td>
+</tr>
+<tr>
+<td>+</td>
+<td>[1,∞)</td>
+</tr>
+<tr>
+<td>?</td>
+<td>[0,1]</td>
+</tr>
+<tr>
+<td>{n}</td>
+<td>[n]</td>
+</tr>
+<tr>
+<td>{n,}</td>
+<td>[n,∞)</td>
+</tr>
+<tr>
+<td>{n,m}</td>
+<td>[n,m]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="定位符">定位符</h3>
+<h3 id="选择">选择</h3>
+<h3 id="反向引用">反向引用</h3>
 <h2 id="修饰符">修饰符</h2>
 <h2 id="元字符">元字符</h2>
 <h2 id="运算符优先级">运算符优先级</h2>
