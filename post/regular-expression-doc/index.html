@@ -283,9 +283,9 @@
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Mon, 26 Sep 2022 17:02:38 &#43;0800"
+                  Modified <relative-time datetime="Tue, 27 Sep 2022 14:14:39 &#43;0800"
                     class="no-wrap">
-                    Mon, 26 Sep 2022 17:02:38 &#43;0800</relative-time>
+                    Tue, 27 Sep 2022 14:14:39 &#43;0800</relative-time>
                   
                 </div>
               </div>
@@ -315,7 +315,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      784 Words
+                      927 Words
                     <span class="file-info-divider"></span>
                                         4 min
 
@@ -559,6 +559,15 @@
 </tbody>
 </table>
 <h3 id="选择">选择</h3>
+<p>用<code>()</code>将所有选择项目括起来 相邻的选择项之间用<code>|</code>分隔</p>
+<p>但用圆括号会有一个副作用 使相关的匹配会被缓存 此时可用<code>?:</code>放在第一个选项前来消除这种副作用</p>
+<p><strong>?= ?&lt;= ?! ?&lt;!的使用区别</strong></p>
+<ul>
+<li><code>exp1(?=exp2)</code>: 查找exp2前面的exp1</li>
+<li><code>(?&lt;=exp2)exp1</code>: 查找exp2后面的exp1</li>
+<li><code>exp1(?!exp2)</code>: 查找后面不是exp2的exp1</li>
+<li><code>(?&lt;!exp2)exp1</code>: 查找前面不是exp2的exp1</li>
+</ul>
 <h3 id="反向引用">反向引用</h3>
 <h2 id="修饰符">修饰符</h2>
 <h2 id="元字符">元字符</h2>
