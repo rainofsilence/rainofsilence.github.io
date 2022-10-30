@@ -6,7 +6,16 @@
     <description>Recent content on Rainofsilence&#39;s site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 11 Oct 2022 13:55:39 +0800</lastBuildDate><atom:link href="https://rainofsilence.icu/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Oct 2022 21:58:33 +0800</lastBuildDate><atom:link href="https://rainofsilence.icu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Brew Use Mysql</title>
+      <link>https://rainofsilence.icu/post/brew-use-mysql/</link>
+      <pubDate>Sun, 30 Oct 2022 21:58:33 +0800</pubDate>
+      
+      <guid>https://rainofsilence.icu/post/brew-use-mysql/</guid>
+      <description>使用brew安装mysql</description>
+    </item>
+    
     <item>
       <title>Macos to Install Python</title>
       <link>https://rainofsilence.icu/post/macos-to-install-python/</link>

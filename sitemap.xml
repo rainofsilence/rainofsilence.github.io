@@ -2,23 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://rainofsilence.icu/tags/brew/</loc>
+    <lastmod>2022-10-30T22:04:19+08:00</lastmod>
+  </url><url>
+    <loc>https://rainofsilence.icu/post/brew-use-mysql/</loc>
+    <lastmod>2022-10-30T22:04:19+08:00</lastmod>
+  </url><url>
+    <loc>https://rainofsilence.icu/tags/mysql/</loc>
+    <lastmod>2022-10-30T22:04:19+08:00</lastmod>
+  </url><url>
+    <loc>https://rainofsilence.icu/post/</loc>
+    <lastmod>2022-10-30T22:04:19+08:00</lastmod>
+  </url><url>
+    <loc>https://rainofsilence.icu/</loc>
+    <lastmod>2022-10-30T22:04:19+08:00</lastmod>
+  </url><url>
+    <loc>https://rainofsilence.icu/tags/</loc>
+    <lastmod>2022-10-30T22:04:19+08:00</lastmod>
+  </url><url>
     <loc>https://rainofsilence.icu/tags/macos/</loc>
     <lastmod>2022-10-11T14:35:42+08:00</lastmod>
   </url><url>
     <loc>https://rainofsilence.icu/post/macos-to-install-python/</loc>
     <lastmod>2022-10-11T14:35:42+08:00</lastmod>
   </url><url>
-    <loc>https://rainofsilence.icu/post/</loc>
-    <lastmod>2022-10-11T14:36:00+08:00</lastmod>
-  </url><url>
     <loc>https://rainofsilence.icu/tags/python/</loc>
     <lastmod>2022-10-11T14:35:42+08:00</lastmod>
-  </url><url>
-    <loc>https://rainofsilence.icu/</loc>
-    <lastmod>2022-10-11T14:36:00+08:00</lastmod>
-  </url><url>
-    <loc>https://rainofsilence.icu/tags/</loc>
-    <lastmod>2022-10-11T14:36:00+08:00</lastmod>
   </url><url>
     <loc>https://rainofsilence.icu/tags/linux/</loc>
     <lastmod>2022-10-11T14:36:00+08:00</lastmod>
